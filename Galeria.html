@@ -8,23 +8,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-950 to-blue-500">
+<body class="bg-gradient-to-b from-blue-950 via-blue-700 to-blue-500">
 
     <header class="w-full top-0 z-50">
         <nav class="max-w-screen-2xl mx-auto">
-            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-24">
+            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
 
                 <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
                     <svg width="28" height="28">
-                        <use xlink:href="./assets/spritee.svg#instagram" />
+                        <use xlink:href="./Assets/spritee.svg#instagram" />
                     </svg>
                 </a>
 
                 <div class="flex flex-row items-center gap-4">
                     <img src="IMG/logo_sin_fondo.png" alt="logo" class="h-16">
-                    <h1 class="text-2xl font-bold text-gray-800 ">Colegio Bilingüe Cedam</h1>
+                    <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
                 </div>
 
                 <a class="bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
@@ -35,26 +35,27 @@
                 </a>
             </div>
             <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class=" z-20">
+            <svg viewBox="0 150 1400 324" class="z-20">
                 <use xlink:href="Assets\sprite.svg#cloud"></use>
             </svg>
             <!--nav-->
-            <ul class="m-13 flex justify-between items-center font-bold text-white p-4 h-16 relative z-20 -mt-88 mb-8">
+            <ul
+                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-88 mb-8 ">
 
                 <li
                     class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
                     <a href="#">Galeria</a>
                 </li>
                 <li
-                    class="bg-green-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
                     <a href="">Campamentos</a>
                 </li>
                 <li
                     class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href=""> Gestión academíca</a>
+                    <a href=""> Gestión académica</a>
                 </li>
                 <li
-                    class="bg-green-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
                     <a href="">Uniformes</a>
                 </li>
                 <li
@@ -65,27 +66,50 @@
         </nav>
     </header>
 
+
+
     <main class="flex flex-col justify-center items-center">
         <div id="title">
-            <h2 class="text-3xl font-bold text-white mt-10">Galeria</h2>
+            <h2 class="text-3xl font-bold text-white">Galeria</h2>
         </div>
 
-        <div id="folders" class="grid grid-cols-3 gap-20 m-10 justify-center items-center">
+        <div id="folders" class="grid grid-cols-3 gap-40 gap-y-1 m-5 justify-center items-center">
+
             <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
                 <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Quiero ver las instalaciones">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
+                    <svg width="200" height="200">
+                        <use xlink:href="Assets/cyfolder.svg"></use>
                     </svg>
                 </a>
-
                 <p >Instalaciones</p>
+
             </div>
             <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
                 <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
+                    <svg width="200" height="200">
+                        <use xlink:href="Assets/cfolder.svg"></use>
+                    </svg>
+                </a>
+
+                <p>Campamentos</p>
+            </div>
+            <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
+                <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
+                    aria-label="Instagram" title="Ir a IG">
+                    <svg width="200" height="200">
+                        <use xlink:href="Assets/cgfolder.svg"></use>
+                    </svg>
+                </a>
+
+                <p>Eventos</p>
+            </div>
+            <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
+                <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
+                    aria-label="Instagram" title="Ir a IG">
+                    <svg width="200" height="200">
+                        <use xlink:href="Assets/cpfolder.svg"></use>
                     </svg>
                 </a>
 
@@ -94,8 +118,8 @@
             <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
                 <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
+                    <svg width="180" height="180">
+                        <use xlink:href="Assets/cppfolder.svg"></use>
                     </svg>
                 </a>
 
@@ -104,34 +128,14 @@
             <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
                 <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
+                    <svg width="180" height="180">
+                        <use xlink:href="Assets/cofolder.svg"></use>
                     </svg>
                 </a>
 
                 <p>Folder Name</p>
             </div>
-            <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
-                <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
-                    aria-label="Instagram" title="Ir a IG">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
-                    </svg>
-                </a>
 
-                <p>Folder Name</p>
-            </div>
-            <div id="folder" class="flex flex-col justify-center items-center gap-2 text-white font-bold">
-                <a href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
-                    aria-label="Instagram" title="Ir a IG">
-                    <svg width="250" height="180">
-                        <use xlink:href="Assets/folder.svg"></use>
-                    </svg>
-                </a>
-
-                <p>Folder Name</p>
-            </div>
-            
         </div>
     </main>
 
@@ -170,7 +174,6 @@
                         <use xlink:href="./assets/spritee.svg#w" />
                     </svg>
                 </a>
-
             </div>
         </div>
 
