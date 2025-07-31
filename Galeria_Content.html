@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria contenido//URL</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-gradient-to-b from-blue-500 to-blue-950">
     <header class="w-full top-0 z-50">
-        <nav class="max-w-screen-2xl mx-auto">
+        <nav class=" mx-auto">
             <div id="top" class="bg-[#F7F9F9] flex justify-center items-center p-4 gap-10 h-24">
 
                 <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
@@ -33,12 +34,12 @@
                 </a>
             </div>
             <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class=" z-20">
+            <svg viewBox="0 150 1400 324" class=" z-30">
                 <use xlink:href="Assets\sprite.svg#cloud"></use>
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-between items-center font-bold text-white p-4 h-16 relative z-20 -mt-88 mb-8 ">
+                class=" m-10 flex justify-between items-center font-bold text-white p-4 h-16 relative z-30 -mt-88 mb-8 ">
 
                 <li
                     class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
@@ -61,15 +62,22 @@
                     <a href="">Servicios</a>
                 </li>
             </ul>
+            
         </nav>
-        <div id="banner">
-            <h1>///section con URL</h1>
-        </div>
+
+        <div id="banner"
+                class="bg-[url(/IMG/banner.png)] bg-center bg-cover h-100 -mt-22 flex flex-col items-center p-30 brightness-70 drop-shadow-xl/50 saturate-150 blur-xs">
+                <div id="content">
+
+                <h1 class="text-white z-30">///section con URL</h1>
+                <img src="./IMG/logo_sin_fondo.png" alt="" class="size-10"> 
+                </div>
+            </div>
+
 
     </header>
 
     <main>
-
     </main>
 
     <footer>
