@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+
+h1, h2{
+    font-family: Margarine;
+}
+
+h3, p{
+    font-family: "Playpen Sans", cursive;
+    font-weight: 500;
+}
+
+
+
