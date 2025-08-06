@@ -8,11 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/CSS/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/Js/parallax.js"></script>
     
 </head>
 
 <body>
-    <main class="bg-blue-500">
+    <main class=" main bg-blue-500">
 
         <header class="w-full top-0 z-50 nav">
             <nav class=" mx-auto">
@@ -70,15 +71,17 @@
             </nav>
         </header>
 
-        <section id="hero"
-            class="bg-gradient-to-b from-blue-500 via-blue-800 to-blue-950 relative min-h-[80vh] flex justify-center items-center overflow-hidden">
+        <section 
+            class="hero bg-gradient-to-b from-blue-500 via-blue-800 to-blue-950 relative min-h-[80vh] flex justify-center items-center overflow-hidden">
 
             <h1 class="absolute text-yellow-400 font-extrabold text-[64px] -mt-40 ml-[10px] z-50">Colegio Bilingüe Cedam
             </h1>
             <img src="./IMG/cloud3.png" class="cloud3 absolute w-full mb-80" alt="">
+            <img src="./IMG/cloudL.png" class="cloudL absolute mb-70 -ml-240 mt-125" alt="">
+            <img src="./IMG/cloudR.png" class="cloudR absolute mb-70 -mr-240 mt-125" alt="">
             <img src="./IMG/cloud2.png" class="cloud2 absolute w-full mb-80" alt="">
-            <img src="./IMG/crayons.png" class="crayons absolute w-full mt-40" alt="">
-            <img src="./IMG/cloud1.png" class="cloud1 absolute w-full mb-95" alt="">
+            <img src="./IMG/crayons.png" class="crayons absolute w-full mt-70" alt="">
+            <img src="./IMG/cloud1.png" class="cloud1 absolute w-full -mb-165" alt="">
         </section>
 
     </main>
@@ -109,7 +112,7 @@
 
             </div>
 
-            <div id="svg">
+            <div>
                 <svg width="200" height="200">
                     <use xlink:href="./assets/star.svg" />
                 </svg>
@@ -127,9 +130,9 @@
 
             <div id="text" class="flex flex-row items-center justify-around gap-10 ">
 
-                <div id="crayon" class="">
+                <div>
                     <svg width="800" height="200">
-                        <use xlink:href="./assets/YCrayon.svg" />
+                        <use xlink:href="./assets/YCrayon.svg" class="crayony" />
                     </svg>
                 </div>
 
@@ -166,12 +169,14 @@
         </div>
     </div>
 
+    <!--Extracurriculares-->
+
     <section>
         <div id="extras" class="bg-[#F6F6F6] h-[470px]  flex flex-col items-center text-green-600 z-30 gap-10 pt-15 ">
             <div id="title" class="text-pink-500 font-extrabold text-2xl">
                 <h2 class="text-[40px]">Extracurriculares</h2>
             </div>
-            <div class="list flex justify-between gap-8 relative z-50">
+            <div class="list flex justify-between gap-8 relative z-50 text-pink-500">
 
                 <div class="extra h-32">
 
@@ -227,8 +232,10 @@
 
             <img src="/IMG/palette.png" alt=""
                 class="absolute text-yellow-400 font-extrabold text-[60px] -ml-[1350px] mt-20 z-10">
-            <img src="/IMG/paint.png" alt=""
-                class="absolute text-yellow-400 font-extrabold text-[60px] -ml-[50px] mt-80 z-10">
+            <img src="/IMG/paintpp.png" alt="" class="pp absolute mr-40 mt-100 z-50">
+            <img src="/IMG/paintblue.png" alt="" class="absolute mr-200 mt-85 z-10">
+            <img src="/IMG/paintyellow.png" alt="" class="absolute ml-100 mt-90 z-10">
+            <img src="/IMG/paintOrange.png" alt="" class="absolute ml-230 mt-85 z-10">
         </div>
     </section>
 
