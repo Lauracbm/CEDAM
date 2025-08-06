@@ -5,6 +5,7 @@ window.onscroll = () => {
     document.querySelector(".cloudR").style.marginLeft = scrollY +.9 + "px";
     document.querySelector(".cloud2").style.marginTop = -scrollY +"px";
     document.querySelector(".cloud1").style.marginTop = -scrollY +"px";
+    document.querySelector(".crayons").style.marginBottom = -scrollY +"px";
     document.querySelector(".main").style.marginTop = -scrollY + .8 + "px";
     document.querySelector(".hero h1").style.marginBottom = scrollY + "px";
     document.querySelector(".hero h1").style.opacity = ( 100 - scrollY) / 50;
