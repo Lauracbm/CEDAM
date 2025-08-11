@@ -1,6 +1,6 @@
 window.onscroll = () => {
     /*parallax hero*/
-    document.querySelector(".cloud3").style.marginTop = scrollY +"px";
+    
     document.querySelector(".cloudL").style.marginRight = scrollY +.5 + "px";
     document.querySelector(".cloudR").style.marginLeft = scrollY +.9 + "px";
     document.querySelector(".cloud2").style.marginTop = -scrollY +"px";
