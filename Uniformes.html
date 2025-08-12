@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>Uniformes</title>
 </head>
 
-<body class="bg-gradient-to-t from-blue-500 to-blue-950">
-    <header class="w-full top-0 z-50 ">
-        <nav class="max-w-screen-2xl mx-auto">
+<body>
+    <header class="w-full top-0 z-50 nav fixed">
+        <nav class=" mx-auto">
             <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
 
                 <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
@@ -33,18 +35,25 @@
                         <use xlink:href="./assets/spritee.svg#facebook" />
                     </svg>
                 </a>
+
+                <a href="Index.html"
+                    class="rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
+                    <span class="material-icons-round text-white ">
+                        home
+                    </span>
+                </a>
             </div>
             <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class="z-20">
+            <svg viewBox="0 150 1400 324" class="z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
                 <use xlink:href="Assets\sprite.svg#cloud"></use>
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-88 mb-8 ">
+                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
 
                 <li
                     class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Galeria.html">Galeria</a>
+                    <a href="/Galeria.html"> Galería</a>
                 </li>
                 <li
                     class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
@@ -65,67 +74,59 @@
             </ul>
         </nav>
     </header>
+    <main class="bg-gradient-to-t from-blue-500 to-blue-950 h-[120vh] mt-15 p-15">
 
-    <section class="flex gap-30 ">
+        <div class="mt-40 grid grid-cols-3 absolute">
 
-        <main class="h-[600px] p-15 text-yellow-300 font-extrabold">
-            <div id="stars" class="flex gap-30 -mt-15">
-                <div>
-                    <a class="  flex flex-col items-center justify-center hover:scale-140 transition-transform hover:text-white size-32"
-                        href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank">
-                        <svg width="100" height="100">
-                            <use xlink:href="./assets/star.svg" />
-                        </svg>
-                        <h2 class="-mt-2">Preescolar</h2>
+            <section class="">
+                <div class="option">
+                    <a href="" class=" flex flex-row justify-center items-center">
+                        <img src="/IMG/minicloud.png" alt="" class="-ml-70">
+                        <img src="./IMG/star.png" alt="">
+                        <p class="bg-white h-10 rounded-full p-2">Preescolar</p>
                     </a>
                 </div>
-                <div>
-                    <a class="  flex flex-col items-center justify-center hover:scale-140 transition-transform hover:text-white size-32"
-                        href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank">
-                        <svg width="100" height="100">
-                            <use xlink:href="./assets/star.svg" />
-                        </svg>
-                        <h2 class="-mt-2">Diario</h2>
+                <div class="option">
+                    <a href="" class=" flex flex-row justify-center items-center">
+                        <img src="/IMG/minicloud.png" alt="" class="-ml-70">
+                        <img src="./IMG/star.png" alt="">
+                        <p>Sudadera</p>
                     </a>
                 </div>
-                <div>
-                    <a class="  flex flex-col items-center justify-center hover:scale-140 transition-transform hover:text-white size-32"
-                        href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank">
-                        <svg width="100" height="100">
-                            <use xlink:href="./assets/star.svg" />
-                        </svg>
-                        <h2 class="-mt-2">Sudadera</h2>
-                    </a>
-                </div>
-                <div>
-                    <a class="  flex flex-col items-center justify-center hover:scale-140 transition-transform hover:text-white size-32"
-                        href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank">
-                        <svg width="100" height="100">
-                            <use xlink:href="./assets/star.svg" />
-                        </svg>
-                        <h2 class="-mt-2">Buzo</h2>
-                    </a>
-                </div>
-            </div>
-        </main>
-        <aside>
-            <div>
-                <svg viewBox="0 0 405 412">
-                    <use xlink:href="Assets\camcrayon.svg"></use>
+            </section>
 
-                </svg>
-            </div>
-        </aside>
-    </section>
+            <section>
+                <img src="" alt="">
+            </section>
 
-    <footer class="-mt-48">
+            <section class="">
+                <div class="option">
+                    <a href="" class=" flex flex-row-reverse justify-center items-center">
+                        <img src="/IMG/minicloud.png" alt="">
+                        <img src="./IMG/star.png" alt="">
+                        <p>Diario</p>
+                    </a>
+                </div>
+
+                <div class="option">
+                    <a href="" class=" flex flex-row-reverse justify-center items-center">
+                        <img src="/IMG/minicloud.png" alt="">
+                        <img src="./IMG/star.png" alt="">
+                        <p>Diario</p>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="-mt-36">
         <svg viewBox="0 0 1400 179">
             <use xlink:href="Assets\sprite.svg#cloud-bottom"></use>
         </svg>
         <div class="h-20 max-w-screen-2xl flex flex-col justify-center items-center -mt-30 z-50 gap-4">
             <p class=" text-gray-500 flex flex-row items-center gap-4"> <a href="https://colegiobilinguecedam.com"><img
                         class="h-10" src="./IMG/logo_sin_fondo.png" alt=""></a> 2025 Colegio Bilingüe Cedam.</p>
-            <p class=" text-gray-500">Todos los derechos reservados.</p>
 
             <div id="social" class="flex flex-row gap-5">
 

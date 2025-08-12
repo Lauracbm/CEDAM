@@ -11,7 +11,10 @@ window.onscroll = () => {
     document.querySelector(".hero h1").style.opacity = ( 100 - scrollY) / 50;
     document.querySelector(".cLogo").style.opacity = ( 100 - scrollY) / 50;
     document.querySelector(".camilacrayon").style.marginRight = scrollY + "px";
+    document.querySelector(".starlight").style.marginRight = scrollY + "px";
 
     /*Parallax */
     document.querySelector(".pp").style.opacity = scrollY / 100;
+
+
 } 
