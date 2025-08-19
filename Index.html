@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/CSS/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/Js/parallax.js"></script>
-    
+
 </head>
 
 <body class=" main bg-blue-500">
@@ -71,7 +71,7 @@
             </nav>
         </header>
 
-        <section 
+        <section
             class="hero bg-gradient-to-b from-blue-500 via-blue-800 to-blue-950 relative min-h-[100vh] flex justify-center items-center overflow-hidden mt-30">
 
             <img src="/IMG/CLogo.png" alt="" class="cLogo mb-90 size-[140px]">
@@ -116,9 +116,13 @@
             </div>
 
             <div>
-                <svg width="200" height="200">
-                    <use xlink:href="./assets/star.svg" />
-                </svg>
+
+                <a class="p-2 size-50 flex flex-col items-center justify-center rounded-full hover:scale-110 transition-transform "
+                    href="https://drive.google.com/file/d/1gyOm8tBkj2Qpx_y_MVmV1RYB6mLhVocy/view" target="_blank">
+                    <img src="/IMG/manualc.png" alt="" class="size-[150px]">
+                    <h2 class="text-center text-pink-500 font-extrabold text-xl">Manual<br>Convivencial</h2>
+                </a>
+                
 
             </div>
 
@@ -139,7 +143,8 @@
                     </svg>
                 </div>
 
-                <p class="w-[450px] text-gray-800 pb-12 -ml-280 text-justify ae z-20">Ofrecer educación formal con énfasis en
+                <p class="w-[450px] text-gray-800 pb-12 -ml-280 text-justify ae z-20">Ofrecer educación formal con
+                    énfasis en
                     bilingüismo y en formación artística a nuestros estudiantes, desarrollando en ellos su potencial
                     humano, sus habilidades artísticas, éticas e intelectuales; enmarcadas en los valores de amor,
                     respeto, solidaridad, tolerancia, amistad y honestidad.</p>
@@ -264,40 +269,41 @@
 
             <h2 class="text-white font-extrabold text-2xl -mt-10 mb-10 text-[40px] text-yellow-300">Contactanos</h2>
 
-            <div id="contact1" class="flex flex-row justify-center items-center gap-80 h-[200px] mt-20 ">
+            <div id="contact1" class="flex flex-row justify-center items-center gap-85 h-[200px] mt-20 ">
 
 
 
                 <div id="formulario flex flex-col"
-                    class="w-[300px] h-[350px] text-gray-800 bg-[#F6F6F6]/60 p-8 rounded-xl">
+                    class="w-[300px] h-[350px] text-gray-800 bg-[#F6F6F6] p-8 rounded-xl">
                     <h3 class="text-[25px] ml-3">Envia un mensaje</h3>
                     <form action="">
                         <div class="flex flex-col gap-3">
-                            
 
-                                <input type="email" id="email" name="email" class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white"
-                                    placeholder="Correo">
 
-                                <input type="text" id="asunto" name="asunto" class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white"
-                                    placeholder="Asunto">
+                            <input type="email" id="email" name="email"
+                                class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white" placeholder="Correo">
 
-                            
-                                <input type="text" id="name" name="name" class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white"
-                                    placeholder="Nombre">
-                            
+                            <input type="text" id="asunto" name="asunto"
+                                class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white" placeholder="Asunto">
 
-                          
 
-                                <textarea id="message" name="message" rows="3" class="rounded-xl bg-gray-400 h-15 w-60 p-2 text-white"
-                                    placeholder="Mensaje"></textarea>
+                            <input type="text" id="name" name="name"
+                                class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white" placeholder="Nombre">
 
 
 
-                                <button type="submit"
-                                    class=" flex flex-row justify-around items-center bg-pink-600 rounded-full size-10 text-white font-bold">
-                                    <span class="material-icons text-yellow-300">
-                                        send
-                                    </span></button>
+
+                            <textarea id="message" name="message" rows="3"
+                                class="rounded-xl bg-gray-400 h-15 w-60 p-2 text-white"
+                                placeholder="Mensaje"></textarea>
+
+
+
+                            <button type="submit"
+                                class=" flex flex-row justify-around items-center bg-pink-600 rounded-full size-10 text-white font-bold">
+                                <span class="material-icons text-yellow-300">
+                                    send
+                                </span></button>
 
                         </div>
                     </form>
