@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Uniformes</title>
+    <link rel="stylesheet" href="CSS/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Servicios</title>
 </head>
 
 <body>
@@ -80,7 +82,8 @@
         <img src="/IMG/CLogo.png" alt="" class=" absolute mb-100 ml-10 size-[80px]">
 
         <h1 class="absolute text-yellow-300 font-extrabold text-[64px] -mt-60 ml-[10px] z-30">Campamentos</h1>
-        <p class=" absolute w-150 z-30 text-center text-white">Porque creemos en una educación global para nuestros estudiantes y
+        <p class=" absolute w-150 z-30 text-center text-white">Porque creemos en una educación global para nuestros
+            estudiantes y
             nuestro objetivo es formar estudiantes para el mundo, contamos con convenios con la universidad de Florida
             en su programa de extensión 4H.</p>
 
@@ -98,10 +101,10 @@
 
     </main>
 
-    <section class="h-[120vh] bg-lime-600 flex justify-center items-center gap-30">
+    <section class="h-[100vh] bg-gradient-to-b from-lime-600 to-lime-950 flex justify-center items-center gap-30">
 
         <div class="require flex flex-col justify-center items-center -mt-90 gap-10">
-            <h2 class="text-[50px] text-white -ml-25 text-white">Requerimientos</h2>
+            <h2 class="text-[50px] text-white -ml-25 text-white z-10">Requerimientos</h2>
             <div class="list flex flex-col gap-8">
                 <div class="options">
                     <img src="/IMG/crayonwood.png" alt="">
@@ -109,15 +112,74 @@
                 </div>
                 <div class="options mt-10">
                     <img src="/IMG/crayonwood.png" alt="">
-                    <p class="text-white text-[20px] -mt-23 ml-20">Tener un buen nivel de inglés <br> para poder comunicarte</p>
+                    <p class="text-white text-[20px] -mt-23 ml-20">Tener un buen nivel de inglés <br> para poder
+                        comunicarte</p>
                 </div>
             </div>
         </div>
 
+        <a href="" class="mb-180">
+        <img src="/IMG/minicloud.png" alt="" class="mb-160 absolute z-40 h-[150px]">
+        <img src="/IMG/folderw.png" alt="" class="ml-10 mb-180 absolute z-40 h-[110px]">
+        </a>
+        
         <div class="slide">
-            <div class="w-[500px] bg-blue-500 h-[400px] -mt-100">
-                <img src="/IMG/logFrame.png" alt="" class="absolute" >
+            <img src="/IMG/logFrame.png" alt="" class="absolute -mt-80 -ml-8 z-30">
+            <!-- Swiper -->
+            <div class="swiper mySwiper -mt-60">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/IMG/CAMP/camp1.jpeg" alt="">Slide 1</div>
+                    <div class="swiper-slide">Slide 2
+                        <img src="/IMG/CAMP/camp2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 3
+                        <img src="/IMG/CAMP/camp3.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 4
+                        <img src="/IMG/CAMP/camp4.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 5
+                        <img src="/IMG/CAMP/camp5.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 6
+                        <img src="/IMG/CAMP/camp6.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 7
+                        <img src="/IMG/CAMP/camp7.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 8
+                        <img src="/IMG/CAMP/camp8.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 9
+                        <img src="/IMG/CAMP/camp9.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
         </div>
     </section>
 
