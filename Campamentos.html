@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Campamentos.css">
+
     <link rel="stylesheet" href="CSS/swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Servicios</title>
@@ -16,71 +17,70 @@
 
 <body>
     <header class="w-full top-0 z-50 nav fixed">
-        <nav class=" mx-auto">
-            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
+            <nav class="mx-auto">
+                <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
 
-                <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                    href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
-                    aria-label="Instagram" title="Ir a IG">
-                    <svg width="28" height="28">
-                        <use xlink:href="./Assets/spritee.svg#instagram" />
-                    </svg>
-                </a>
+                    <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                        href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
+                        aria-label="Instagram" title="Ir a IG">
+                        <svg width="28" height="28" class="social">
+                            <use xlink:href="./Assets/spritee.svg#instagram" />
+                        </svg>
+                    </a>
 
-                <div class="flex flex-row items-center gap-4">
-                    <img src="IMG/logo_sin_fondo.png" alt="logo" class="h-16">
-                    <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
-                </div>
+                    <div class="logo flex flex-row items-center gap-4">
+                        <img src="IMG/logo_sin_fondo.png" alt="logo" class="h-16">
+                        <h1 class="text-3xl font-bold text-[#06039C]">Colegio Bilingüe Cedam</h1>
+                    </div>
 
-                <a class="bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
-                    href="https://www.facebook.com/Colegiobilinguecedam" target="_blank">
-                    <svg width="50" height="50">
-                        <use xlink:href="./assets/spritee.svg#facebook" />
-                    </svg>
-                </a>
+                    <a class=" social bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
+                        href="https://www.facebook.com/Colegiobilinguecedam" target="_blank">
+                        <svg width="50" height="50" class="social">
+                            <use xlink:href="./assets/spritee.svg#facebook" />
+                        </svg>
+                    </a>
 
-                <a href="Index.html"
-                    class="rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
+                    <a href="Index.html" class=" home rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
                     <span class="material-icons-round text-white ">
                         home
                     </span>
                 </a>
-            </div>
-            <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class="z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
-                <use xlink:href="Assets\sprite.svg#cloud"></use>
-            </svg>
-            <!--nav-->
-            <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
+                </div>
+                <!--Cloud-->
+                <svg  viewBox="0 150 1400 324" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
+                    <use xlink:href="Assets\sprite.svg#cloud"></use>
+                </svg>
+                <!--nav-->
+                <ul
+                    class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
 
-                <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Galeria.html"> Galería</a>
-                </li>
-                <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Campamentos.html">Campamentos</a>
-                </li>
-                <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/"> Gestión académica</a>
-                </li>
-                <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Uniformes.html">Uniformes</a>
-                </li>
-                <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Servicios.html">Servicios</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <li
+                        class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                        <a href="Galeria.html"> Galería</a>
+                    </li>
+                    <li
+                        class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                        <a href="Campamentos.html">Campamentos</a>
+                    </li>
+                    <li
+                        class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                        <a href="/"> Gestión académica</a>
+                    </li>
+                    <li
+                        class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                        <a href="Uniformes.html">Uniformes</a>
+                    </li>
+                    <li
+                        class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                        <a href="Servicios.html">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     <main
         class="hero bg-gradient-to-b from-blue-500 via-blue-800 to-blue-950 relative min-h-[100vh] flex justify-center items-center overflow-hidden mt-15">
 
-        <img src="/IMG/CLogo.png" alt="" class=" absolute mb-100 ml-10 size-[80px]">
+        <img src="/IMG/CLogo.png" alt="" class="cLogo absolute mb-100 ml-10 size-[80px]">
 
         <h1 class="absolute text-yellow-300 font-extrabold text-[64px] -mt-60 ml-[10px] z-30">Campamentos</h1>
         <p class=" absolute w-150 z-30 text-center text-white">Porque creemos en una educación global para nuestros
@@ -89,23 +89,23 @@
             en su programa de extensión 4H.</p>
 
         <img src="./IMG/starlight.png" class="starlight w-full absolute z-0 mt-20" alt="">
-        <img src="./IMG/mountain2.png" class="cloud2 absolute w-full mt-10" alt="">
-        <img src="./IMG/mountain1.png" class="cloud2 absolute w-full mt-30" alt="">
+        <img src="./IMG/mountain2.png" class="mountain2 absolute w-full mt-10" alt="">
+        <img src="./IMG/mountain1.png" class="mountain1 absolute w-full mt-30" alt="">
         <img src="./IMG/tree.png" class="tree absolute mt-20 mr-170" alt="">
         <img src="./IMG/minicloud.png" class="minicloud absolute mb-60 -ml-290 w-[200px]" alt="">
         <img src="./IMG/tree.png" class="tree absolute mt-20 ml-230" alt="">
-        <img src="./IMG/grass.png" class="cloud2 absolute w-full -mb-110" alt="">
+        <img src="./IMG/grass.png" class="grass absolute w-full -mb-110" alt="">
         <img src="./IMG/tent.png" class="tree absolute mt-60" alt="">
-        <img src="./IMG/campfire.png" class="cloud2 absolute mt-90" alt="">
-        <img src="./IMG/camcam.png" class="tree absolute mt-90" alt="">
+        <img src="./IMG/campfire.png" class="campfire absolute mt-90" alt="">
+        <img src="./IMG/camcam.png" class="camcam absolute mt-90" alt="">
 
 
     </main>
 
-    <section class="h-[100vh] bg-gradient-to-b from-lime-600 to-lime-950 flex justify-center items-center gap-30">
+    <section class="content h-[90vh] bg-gradient-to-b from-lime-600 to-lime-950 flex justify-center items-center gap-30">
 
-        <div class="require flex flex-col justify-center items-center -mt-90 gap-10">
-            <h2 class="text-[50px] text-white -ml-25 text-white z-10 text-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">Requerimientos</h2>
+        <div class="requirements flex flex-col justify-center items-center -mt-90 gap-10">
+            <h1 class="text-[50px] text-white -ml-25 text-white z-10 text-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">Requerimientos</h1>
             <div class="list flex flex-col gap-20">
                 <div class="options">
                     <img src="/IMG/crayonwood.png" alt="" class="h-[150px]">
@@ -135,30 +135,30 @@
             <div class="swiper mySwiper -mt-60">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="/IMG/CAMP/camp1.jpeg" alt="">Slide 1
+                        <img src="/IMG/CAMP/camp1.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 2
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp2.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 3
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp3.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 4
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp4.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 5
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp5.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 6
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp6.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 7
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp7.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 8
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp8.jpeg" alt="">
                     </div>
-                    <div class="swiper-slide">Slide 9
+                    <div class="swiper-slide">
                         <img src="/IMG/CAMP/camp9.jpeg" alt="">
                     </div>
                 </div>
@@ -191,7 +191,7 @@
     </section>
 
     <footer class="-mt-36 w-full">
-        <svg viewBox="0 0 1440 220" class=" z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+        <svg viewBox="0 0 1440 220" class="cloud-bottom z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
             <use xlink:href="Assets\sprite.svg#cloud-bottom"></use>
         </svg>
         <div class="h-20 flex flex-col justify-center items-center -mt-30 relative gap-4">
