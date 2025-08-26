@@ -74,14 +74,15 @@ a{
 
     /*hero*/
     .hero{
-        max-height: 100vh;
+        max-height: 60vh;
         }
 
     .hero img.cLogo{
         height: 70px;
         width: 70px;
-        margin-top: -150px;
+        margin-top: 80px;
         margin-left: 30px;
+        z-index: 2;
     }
 
     .hero h1{
@@ -89,13 +90,292 @@ a{
         width: 300px;
         line-height: 45px;
         text-align: center;
-        margin-top: -300px;
+        margin-top: -50px;
+    }
+
+    .hero img.starlight{
+        margin-bottom: 250px;
+        z-index: 1 ;
     }
 
     .hero img.camilacrayon{
      height: 80px;
      width: 60px;
-     margin-top: -150px;
-     margin-left: 30px;
+     margin-top:  120px;
+     rotate: 10deg;
+     margin-left: -270px;
+     z-index: 2 ;
     }
+
+    .hero img.cloudL{
+        height: 100px;
+        margin-left: -180px;
+        margin-bottom: 420px;
+        rotate: 10deg;
+        z-index: 1;
+    }
+
+    .hero img.cloudR{
+        height: 100px;
+        margin-right: -180px;
+        margin-bottom: 430px;
+        rotate: -10deg;
+        z-index: 1;
+    }
+
+    .hero img.cloud2{
+        margin-bottom: -10px;
+        z-index: 2;
+    }
+
+    .hero img.crayons{
+        margin-top: 130px;
+        z-index: 3;
+    }
+
+    .hero img.cloud1{
+        margin-bottom: -270px;
+        z-index: 3;
+    }
+
+    /*about us*/
+    #About {
+        margin-top: -30px;
+        z-index: 4;
+    }
+
+     #info{
+        margin-top: 80px;
+        margin-left: -50px;
+    }
+
+    #About h2 {
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: -300px;
+    }
+
+    #About p {
+        font-size: 15px;
+        width: 40%;
+        margin-left: 40px;
+        text-align: justify;
+    }
+
+
+    #About svg{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 120px;
+        height: 70px;
+    }
+    #About a{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        margin-left: 180px;
+        margin-top: 150px;
+        border-radius: 50%;
+    }
+
+    #About a img{
+        height: 130px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    #About a h2{
+        font-size: 20px;
+        margin-top: -120px;
+        margin-left: 250px;
+    }
+
+    #myv{
+        gap: 100px;
+        height: 90vh;
+    }
+
+    #mision p{
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: -10px;
+        margin-top: 300px;
+        position: absolute;
+        width: 80%;
+        color: oklch(79.5% 0.184 86.047);
+    }
+
+    #mision h2{
+        font-size: 25px;
+        font-weight:700;
+        margin-left: -120px;
+        margin-bottom: 20px;
+        position: absolute;
+        color: #f6f6f6;
+    }
+
+    #mision svg{
+        margin-left: -710px;
+        margin-top: -20px;
+    }
+
+    #vision p{
+        font-size: 10px;
+        font-weight: 600;
+        margin-right: 10px;
+        margin-top: 300px;
+        position: absolute;
+        width: 80%;
+        color: oklch(72.3% 0.219 149.579);
+    }
+
+    #vision h2{
+        font-size: 25px;
+        font-weight:700;
+        margin-right: -100px;
+        margin-bottom: 0px;
+        position: absolute;
+        color: #f6f6f6;
+    }
+
+    #vision svg{
+        margin-right: -115px;
+        margin-top: 0px;
+        width: 200px;
+    }
+
+    /*extras*/
+
+    #extras{
+        height: 200vh;
+    }
+
+    #extras h2{
+        font-size: 30px;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .list a{
+        height: 100px;
+        width: 300px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .list a img{
+        height: 180px;
+        width: auto;
+    }
+
+    img.palette {
+       position: absolute; 
+       margin-left: -200px;
+       margin-top: -5px;
+       height: 150px;
+       width: auto;
+    }
+
+    img.bb{
+        position: absolute;
+        margin-left: 600px;
+        height: 100px;
+        width: auto;
+    }
+
+    img.pp{
+        position: absolute;
+        margin-top: 600px;
+        margin-right: -200px;
+    }
+
+    img.yy{
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 100px;
+        height: 50px;
+        width: auto;
+    }
+
+    /*contact us*/
+    #contacto{
+        height: 300vh;
+    }
+
+    #contacto img{
+        margin-left: 30px;
+    }
+
+    #contacto h2{
+        margin-top: -300px;
+    }
+
+    #contact1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 180px
+    }
+
+    #formulario{
+        width: 250px;
+    }
+
+    #formulario h3{
+        font-size: 20px;
+    }
+
+    #formulario .ff{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ff input, textarea{
+        padding: 10px;
+        width: 200px;
+    }
+
+    .vid h3{
+        font-size: 15px;
+    }
+
+    #contact1 .vid{
+        width: 280px;
+        height: 400px;
+        position: relative;
+    }
+
+    .vid iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .contact2{
+        margin-top: 150px;
+    }
+
+    .contact2 #info{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #card{
+        width: 280px;
+        margin-left: 50px;
+        gap: 10px;
+    }
+
+    #map iframe{
+        width: 300px;
+        margin-top: 30px;
+    }
+
+
 }

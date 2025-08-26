@@ -81,13 +81,13 @@ a {
 
     /*hero*/
     .hero {
-        max-height: 70vh;
+        max-height: 80vh;
     }
 
     .hero img.cLogo {
         height: 70px;
         width: 70px;
-        margin-top: -130px;
+        margin-top: -100px;
         margin-left: 30px;
     }
 
@@ -95,7 +95,7 @@ a {
         font-size: 40px;
         line-height: 45px;
         text-align: center;
-        margin-top: -400px;
+        margin-top: -380px;
     }
 
     .hero p {
@@ -117,7 +117,7 @@ a {
     }
 
     .hero img.starlight {
-        margin-bottom: 600px;
+        margin-bottom: 500px;
     }
 
     .hero img.tree {
@@ -133,7 +133,7 @@ a {
         height: 200px;
     }
 
-    .hero img.camcam{
+    .hero img.camcam {
         margin-bottom: 200px;
     }
 
@@ -144,13 +144,13 @@ a {
         gap: 10px;
         flex-direction: column;
         padding: 10px;
-        height: 300vh;
+        height: 200vh;
     }
 
     .content .requirements {
         gap: 5px;
-        margin-bottom: 150px;
-        
+        margin-bottom: -150px;
+
     }
 
     .content .requirements h1 {
@@ -170,7 +170,38 @@ a {
         text-align: center;
         margin-left: -40px;
         margin-bottom: -30px;
-        
+
+    }
+
+    .slide img.logFrame {
+        width: 350px;
+        height: auto;
+    }
+
+    .slide h2 {
+        font-size: 35px;
+        margin-left: 80px;
+    }
+
+    .slide h2.year {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-left: 130px;
+    }
+
+    .goTo {
+        float: none;
+    }
+    
+
+    .goTo .minicloud {
+        height: 130px;
+        margin-left: -20px;
+    }
+
+    .goTo .folderw {
+        height: 90px;
+        margin-left: 10px;
     }
 
     /*footer*/
