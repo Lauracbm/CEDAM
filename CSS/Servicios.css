@@ -107,6 +107,8 @@ a {
         font-size: 12px;
     }
 
+    /*contenido del contenido de la imagen que contiene las crayolas que contienen los titulos de los servicios*/
+
     .box {
         rotate: 90deg;
         transform: translateY(50%);

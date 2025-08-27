@@ -3,56 +3,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-h1, h2{
+h1,
+h2 {
     font-family: Margarine;
 }
 
-h3{
+h3 {
     font-family: "Sour Gummy", sans-serif;
     font-weight: 800;
     color: #ec4899;
 }
 
-p{
+p {
     font-family: "Playpen Sans", cursive;
     font-weight: 500;
 }
 
-.options:hover{
+.options:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    
+
 }
 
-a{
+a {
     text-decoration: none;
     font-family: "Sour Gummy", sans-serif;
 }
 
+.crayolay, .crayolag {
+    display: none;
+}
+
 
 @media screen and (max-width: 900px) {
+
+    html,
     body {
-        max-width: 100vw;
         width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     #top {
-        height: 70px;
         width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
+        height: 60px;
         gap: 10px;
+        padding: 0 10px;
     }
 
-    .logo{
+    .logo {
         gap: 5px;
+        flex-direction: row;
+        align-items: center;
     }
+
     .logo h1 {
         font-size: 17px;
+        text-align: center;
+        width: 100%;
     }
+
     .logo img {
         height: 30px;
+        width: auto;
     }
 
     #top a {
@@ -61,239 +80,299 @@ a{
         padding: 5px;
     }
 
-     #top a {
-        height: 25px;
-        width: 25px;
-        padding: 5px;
-    }
-
     svg.cloud {
-        width: 100vw;
-        margin-top: -5px;
+        width: 100vw !important;
+        margin-top: -3px;
     }
 
     /*hero*/
-    .hero{
-        max-height: 60vh;
-        }
+    .hero {
+        max-height: 80vh;
+        width: 100vw !important;
+        min-width: 0;
+        max-width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: -1px;
+    }
 
-    .hero img.cLogo{
+    .hero img.cLogo {
         height: 70px;
         width: 70px;
-        margin-top: 80px;
-        margin-left: 30px;
+        margin-top: 110px;
         z-index: 2;
+        display: block;
     }
 
-    .hero h1{
+    .hero h1 {
         font-size: 30px;
-        width: 300px;
+        width: 90vw;
         line-height: 45px;
         text-align: center;
-        margin-top: -50px;
+        margin-top: -10px;
     }
 
-    .hero img.starlight{
-        margin-bottom: 250px;
-        z-index: 1 ;
+    .hero img.starlight {
+        margin-bottom: 220px;
+        z-index: 1;
+        width: 100vw;
+        max-width: 100vw;
     }
 
-    .hero img.camilacrayon{
-     height: 80px;
-     width: 60px;
-     margin-top:  120px;
-     rotate: 10deg;
-     margin-left: -270px;
-     z-index: 2 ;
-    }
-
-    .hero img.cloudL{
-        height: 100px;
-        margin-left: -180px;
-        margin-bottom: 420px;
+    .hero img.camilacrayon {
+        height: 80px;
+        width: 60px;
+        margin-top: 200px;
         rotate: 10deg;
-        z-index: 1;
-    }
-
-    .hero img.cloudR{
-        height: 100px;
-        margin-right: -180px;
-        margin-bottom: 430px;
-        rotate: -10deg;
-        z-index: 1;
-    }
-
-    .hero img.cloud2{
-        margin-bottom: -10px;
+        margin-left: -240px;
         z-index: 2;
     }
 
-    .hero img.crayons{
-        margin-top: 130px;
+    .hero img.cloudL {
+        height: 100px;
+        margin-left: -180px;
+        margin-bottom: 310px;
+        rotate: 5deg;
+        z-index: 1;
+    }
+
+    .hero img.cloudR {
+        height: 100px;
+        margin-right: -180px;
+        margin-bottom: 310px;
+        rotate: -5deg;
+        z-index: 1;
+    }
+
+    .hero img.cloud2 {
+        margin-bottom: -130px;
+        z-index: 2;
+    }
+
+    .hero img.crayons {
+        margin-top: 260px;
         z-index: 3;
     }
 
-    .hero img.cloud1{
-        margin-bottom: -270px;
+    .hero img.cloud1 {
+        margin-bottom: -400px;
         z-index: 3;
     }
 
     /*about us*/
     #About {
-        margin-top: -30px;
+        margin-top: 0px;
         z-index: 4;
-    }
-
-     #info{
-        margin-top: 80px;
-        margin-left: -50px;
+        width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     #About h2 {
-        font-size: 30px;
-        margin-left: 30px;
-        margin-top: -300px;
+        font-size: 27px;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
     }
 
     #About p {
         font-size: 15px;
-        width: 40%;
-        margin-left: 40px;
+        width: 70vw;
         text-align: justify;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-
-    #About svg{
-        position: absolute;
-        margin-top: 80px;
-        margin-left: 120px;
-        height: 70px;
+    #div1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
-    #About a{
+
+    #About svg {
+        display: none !important;
+    }
+
+    #About a {
         height: 150px;
         width: 150px;
-        position: absolute;
-        margin-left: 180px;
-        margin-top: 150px;
+        position: static;
+        margin-left: -150px;
+        margin-top: 0px;
         border-radius: 50%;
+        background-color: #ec4899 ;
     }
 
-    #About a img{
-        height: 130px;
+    #About a img {
+        height: 140px;
         width: auto;
         margin-bottom: 20px;
     }
 
-    #About a h2{
-        font-size: 20px;
+    #About a h2 {
+        font-size: 18px;
         margin-top: -120px;
         margin-left: 250px;
     }
 
-    #myv{
-        gap: 100px;
-        height: 90vh;
+    #myv {
+        gap: 200px;
+        height: auto;
+        padding: 0 10px;
+        width: 100vw;
+        box-sizing: border-box;
     }
 
-    #mision p{
-        font-size: 10px;
+    #mision {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
+    }
+
+    #mision svg {
+        display: none !important;
+    }
+
+    .crayolay {
+        rotate: 90deg;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px;
+        height: auto;
+        margin-left: 25px;
+        margin-top: -150px;
+        z-index: 2;
+        position: static;
+    }
+  
+
+    #mision p {
+        font-size: 12px;
         font-weight: 600;
-        margin-left: -10px;
-        margin-top: 300px;
-        position: absolute;
-        width: 80%;
+        margin-left: 20px;
+        margin-top: -200px;
+        position: static;
+        width: 40vh;
+        text-align: justify;
         color: oklch(79.5% 0.184 86.047);
+        z-index: 1;
     }
 
-    #mision h2{
+    #mision h2 {
         font-size: 25px;
-        font-weight:700;
-        margin-left: -120px;
-        margin-bottom: 20px;
-        position: absolute;
-        color: #f6f6f6;
+        font-weight: 700;
+        margin-left:40px;
+        margin-top: -330px;
+        z-index: 2;
+        position: static;
+        color: #28292f;
     }
 
-    #mision svg{
-        margin-left: -710px;
-        margin-top: -20px;
+    /*vision*/
+
+    #vision{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
     }
 
-    #vision p{
-        font-size: 10px;
+    #vision p {
+        font-size: 12px;
         font-weight: 600;
-        margin-right: 10px;
-        margin-top: 300px;
-        position: absolute;
-        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        position: static;
+        width: 40vh;
         color: oklch(72.3% 0.219 149.579);
+        z-index: 1;
     }
 
-    #vision h2{
+    #vision h2 {
         font-size: 25px;
-        font-weight:700;
-        margin-right: -100px;
-        margin-bottom: 0px;
-        position: absolute;
-        color: #f6f6f6;
+        font-weight: 700;
+        margin-left: 180px;
+        margin-top: -280px;
+        position: static;
+        color: #28292f;
+        z-index: 2;
     }
 
-    #vision svg{
-        margin-right: -115px;
-        margin-top: 0px;
-        width: 200px;
+    #vision svg {
+        display: none !important;
+    }
+
+    .crayolag {
+        rotate: -90deg;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px;
+        height: auto;
+        margin-left: 170px;
+        margin-top: -150px;
+        z-index: 1;
+        position: static;
     }
 
     /*extras*/
 
-    #extras{
+    #extras {
         height: 200vh;
     }
 
-    #extras h2{
+    #extras h2 {
         font-size: 30px;
     }
 
-    .list{
+    .list {
         display: flex;
         flex-direction: column;
         gap: 90px;
     }
 
-    .list a{
+    .list a {
         height: 100px;
         width: 300px;
         border-radius: 20px;
         padding: 10px;
     }
 
-    .list a img{
+    .list a img {
         height: 180px;
         width: auto;
     }
 
     img.palette {
-       position: absolute; 
-       margin-left: -200px;
-       margin-top: -5px;
-       height: 150px;
-       width: auto;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: -5px;
+        height: 150px;
+        width: auto;
     }
 
-    img.bb{
+    img.bb {
         position: absolute;
         margin-left: 600px;
         height: 100px;
         width: auto;
     }
 
-    img.pp{
+    img.pp {
         position: absolute;
         margin-top: 600px;
         margin-right: -200px;
     }
 
-    img.yy{
+    img.yy {
         position: absolute;
         margin-left: 250px;
         margin-top: 100px;
@@ -302,80 +381,108 @@ a{
     }
 
     /*contact us*/
-    #contacto{
-        height: 300vh;
+    #contacto {
+        height: 240vh;
+        width: 100vw;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
-    #contacto img{
-        margin-left: 30px;
+    #contacto img {
+        display: none;
     }
 
-    #contacto h2{
-        margin-top: -300px;
+    #contacto h2 {
+        margin-top: 0px;
+        text-align: center;
     }
 
-    #contact1{
+    #contact1 {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         margin-top: 180px
     }
 
-    #formulario{
+    #formulario {
         width: 250px;
     }
 
-    #formulario h3{
+    #formulario h3 {
         font-size: 20px;
     }
 
-    #formulario .ff{
+    #formulario .ff {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .ff input, textarea{
+    .ff input,
+    textarea {
         padding: 10px;
         width: 200px;
     }
 
-    .vid h3{
+    .vid h3 {
         font-size: 15px;
     }
 
-    #contact1 .vid{
+    #contact1 .vid {
         width: 280px;
         height: 400px;
         position: relative;
     }
 
-    .vid iframe{
+    .vid iframe {
         width: 250px;
         height: 150px;
     }
 
-    .contact2{
+    .contact2 {
         margin-top: 150px;
+        padding: 10px;
+        gap: 20px;
     }
 
-    .contact2 #info{
-        margin-top: 100px;
+    .contact2 #info {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    #card{
+    #card {
         width: 280px;
-        margin-left: 50px;
         gap: 10px;
     }
 
-    #map iframe{
-        width: 300px;
-        margin-top: 30px;
+    #map iframe {
+        width: 280px;
+        height: 300px;
+        margin: 0px 10px 20px 10px;
+    }
+ 
+    footer{
+        margin-top: -60px;
+        background-color: #F6F6F6;
+        padding: 20px;
+        text-align: center;
     }
 
+    svg.cloud-bottom {
+        display: none !important;
+    }
+
+    #social a{
+        margin-top: 200px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .logof p{
+        display: none;
+
+    }
 
 }
