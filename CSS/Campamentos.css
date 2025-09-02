@@ -174,9 +174,10 @@ a {
 
     /*content*/
     .contenido {
+        padding-top: 80px;
         flex-direction: column;
-        padding: -10px;
-        height: 150vh;
+        padding-top: -30px;
+        height: 130vh;
         width: 100vw;
         box-sizing: border-box;
     }
@@ -195,7 +196,7 @@ a {
 
     .contenido .options img {
         height: 100px;
-        width: auto;
+        width: 90vw;
         text-align: center;
         margin: 0 auto;
         display: block;
@@ -203,55 +204,115 @@ a {
 
     .contenido .requirements .list .options h2 {
         font-size: 15px;
-        margin-left: 10px;
+        margin-left: 50px;
+        margin-top: -80px;
         text-align: justify;
-        margin-bottom: -20px;
-        width: 90vw;
+        margin-bottom: -60px;
+        width: 50vw;
     }
 
-    
+    .minicloud{
+        display: none;
+    }
 
-    .slide img.logFrame {
+    .folderw{
+        display: none;
+    }
+
+    .logFrame {
+        display: none;
         width: 90vw;
         height: auto;
-        margin: 0 auto;
-        z-index: 3;
-        position: static;
+        z-index: 5;
+       bottom: -300px;
+       margin-left: auto;
+       margin-right: auto;
+        position: relative;
         display: block;
     }
     
 
     .slide h2 {
-        font-size: 35px;
-        margin-left: 0px;
+        position: relative;
+        font-size: 30px;
+        bottom: -230px;
+        margin-left: 60px;
+        z-index: 10;
 
     }
 
-    .slide h2.year {
-        font-size: 40px;
-        margin-top: 50px;
-        margin-left: 130px;
+    h2.year {
+        position: relative;
+        font-size: 30px;
+        margin-left: 120px;
+        bottom: -290px;
     }
 
-    .goTo {
-        float: none;
+    .gallery h2{
+        display: none;
     }
+
+   /* .gallery {
+        display: none;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 5px;
+        position: relative;
+        bottom: 50px;
+        z-index: 20;
+    }
+
     
 
     .goTo .minicloud {
-        height: 130px;
-        margin-left: -20px;
+        display: block;
+        position: relative;
+        height: 90px;
+        width: auto;
+        z-index: 20;
     }
+
 
     .goTo .folderw {
         height: 90px;
         margin-left: 10px;
-    }
+    }*/
 
     /*footer*/
 
     footer svg.cloud-bottom {
         width: 100vw;
-        margin-bottom: 60px;
+        margin-top: 100px;
+    }
+
+    
+
+    footer a{
+        margin-top: 30px;
+        height: 25px;
+        width: 25px;
+    }
+
+    #social{
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .logof{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-top: -100px;
+    }
+    .logof img{
+        width: 30px;
+        height: auto;
+    }
+
+    .logof p{
+        margin-top: 90px;
+        font-size: 8px;
+        width: 150px;
     }
 }
