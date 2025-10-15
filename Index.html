@@ -7,12 +7,13 @@
     <title>Cedam</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/CSS/index.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
 
 </head>
 
 <body>
-
 
     <script>
         if (window.innerWidth > 768) {
@@ -26,8 +27,9 @@
 
 
     <header class="w-full top-0 z-50 nav fixed">
-        <nav class="mx-auto">
+        <nav class="nav mx-auto">
             <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
+
 
                 <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
@@ -48,6 +50,8 @@
                         <use xlink:href="./assets/spritee.svg#facebook" />
                     </svg>
                 </a>
+
+                <button id="menu-open-button" class="fas fa-bars text-black"></button>
             </div>
             <!--Cloud-->
             <svg viewBox="0 150 1400 324" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
@@ -55,29 +59,31 @@
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
+                class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
 
+                <button id="menu-close-button" class="fas fa-times text-black"></button>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Galeria.html"> Galería</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Galeria.html" class="nav-link"> Galería</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Campamentos.html">Campamentos</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Campamentos.html" class="nav-link">Campamentos</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/"> Gestión académica</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="/" class="nav-link"> Gestión académica</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Uniformes.html">Uniformes</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Uniformes.html" class="nav-link">Uniformes</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Servicios.html">Servicios</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Servicios.html" class="nav-link">Servicios</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
@@ -274,36 +280,43 @@
 
         <h2 class="text-white font-extrabold text-2xl -mt-10 mb-10 text-[40px] text-yellow-300">Contactanos</h2>
 
-        <div id="contact1" class="flex flex-row justify-center items-center gap-85 h-[200px] mt-20 ">
+        <div id="contact1" class="flex flex-row justify-center items-center gap-38 h-[200px] mt-20 ">
 
 
 
-            <div id="formulario" class="w-[300px] h-[350px] text-gray-800 bg-[#F6F6F6] p-8 rounded-xl">
-                <h3 class="text-[25px] ml-3">Envia un mensaje</h3>
+            <div id="formulario" class="w-[500px] h-[350px] text-gray-800 bg-[#F6F6F6]/25 p-8 rounded-xl">
                 <form action="">
-                    <div class="ff flex flex-col gap-3">
+                    <div class="ff flex flex-col gap-5">
 
-                        <input type="email" id="email" name="email"
-                            class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white" placeholder="Correo">
+                        <div class="form-1 flex flex-row gap-8">
+                            <input type="text" id="name" name="name"
+                                class="rounded-full bg-emerald-50 h-10 w-50 p-2 text-gray-500 font-bold"
+                                placeholder="Nombre">
 
-                        <input type="text" id="asunto" name="asunto"
-                            class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white" placeholder="Asunto">
+                            <input type="email" id="email" name="email"
+                                class="rounded-full bg-emerald-50 h-10 w-50 p-2 text-gray-500 font-bold"
+                                placeholder="Correo">
+                        </div>
 
+                        <div class="form-2 gap-5 flex flex-col">
 
-                        <input type="text" id="name" name="name" class="rounded-xl bg-gray-400 h-10 w-60 p-2 text-white"
-                            placeholder="Nombre">
+                            <input type="text" id="asunto" name="asunto"
+                                class="rounded-full bg-emerald-50 h-10 w-full p-2 text-gray-500 font-bold"
+                                placeholder="Asunto">
 
+                            <textarea id="message" name="message" rows="5"
+                                class="rounded-2xl bg-emerald-50 h-20 w-full p-2 text-gray-500 font-bold"
+                                placeholder="Mensaje"></textarea>
 
-                        <textarea id="message" name="message" rows="3"
-                            class="rounded-xl bg-gray-400 h-15 w-60 p-2 text-white" placeholder="Mensaje"></textarea>
-
-
+                        </div>
 
                         <button type="submit"
-                            class=" flex flex-row justify-around items-center bg-pink-600 rounded-full size-10 text-white font-bold">
-                            <span class="material-icons text-yellow-300">
+                            class=" flex flex-row justify-around items-center bg-pink-600 size-10 text-white font-bold w-50 rounded-full">
+                            <h3>Envia un mensaje</h3>
+                            <span class="material-icons-round text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
                                 send
-                            </span></button>
+                            </span>
+                        </button>
 
                     </div>
                 </form>
@@ -311,8 +324,7 @@
 
             <!--Video-->
             <div
-                class=" vid bg-[#F6F6F6] w-[550px] h-[350px] flex flex-col justify-center items-center p-10 rounded-xl">
-                <h3 class="-mt-8 p-3 text-[25px]">¿Dónde estamos?</h3>
+                class=" vid bg-[#F6F6F6]/25 w-[550px] h-[350px] flex flex-col justify-center items-center p-10 rounded-xl">
                 <iframe width="480" height="400" src="https://www.youtube.com/embed/LVZQ2k_qGng?si=Knmik920rPDJNLa0"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share"
@@ -327,8 +339,8 @@
                 <div id="card"
                     class="bg-[#F6F6F6] h-24 justify-start gap-10 items-top w-70 rounded-2xl p-6 flex flex-row ">
                     <div id="icon">
-                        <span
-                            class="material-icons text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
+                        <span class="material-icons-round material-icons text-yellow-300 bg-pink-600 size-10
+                            flex items-center justify-center p-2 rounded-full">
                             phone
                         </span>
                     </div>
@@ -342,8 +354,8 @@
                     class="bg-[#F6F6F6] h-24 justify-center gap-10 items-center w-90 rounded-2xl p-6 flex flex-row ">
                     <div id="icon">
                         <span
-                            class="material-icons text-gray-800 text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
-                            location_pin
+                            class="material-icons-round text-gray-800 text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
+                            location_on
                         </span>
                     </div>
                     <div id="">
@@ -356,13 +368,13 @@
                     class="bg-[#F6F6F6] h-24 justify-center gap-10 items-center w-90 rounded-2xl p-6 flex flex-row ">
                     <div id="icon">
                         <span
-                            class="material-icons text-gray-800 text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
-                            location_pin
+                            class="material-icons-round text-yellow-300 bg-pink-600 size-10 flex items-center justify-center p-2 rounded-full">
+                            location_on
                         </span>
                     </div>
                     <div id="">
                         <h3 class="text-gray-800 font-bold">Highschool:</h3>
-                        <p class="text-gray-800">Calle 2 B # 27 A - 26 Santa Isabel</p>
+                        <p class="text-gray-800">Calle 2B #27A - 26 Santa Isabel</p>
                     </div>
                 </div>
             </div>

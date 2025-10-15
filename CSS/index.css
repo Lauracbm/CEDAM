@@ -8,10 +8,20 @@ h2 {
     font-family: Margarine;
 }
 
+#formulario input, textarea{
+    font-family: Margarine;
+}
+
 h3 {
     font-family: "Sour Gummy", sans-serif;
     font-weight: 800;
     color: #ec4899;
+}
+
+#contact1 h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 800;
+    color: #fde047;
 }
 
 p {
@@ -36,6 +46,47 @@ a {
 
 
 @media screen and (max-width: 900px) {
+
+    .nav :where(#menu-close-button, #menu-open-button) {
+        font-size: large;
+       
+    }
+
+    .nav #menu-close-button{
+        position: absolute;
+        right: 30px;
+        bottom: 250px;
+    }
+
+    .nav .nav-menu {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 400px;
+        padding-bottom: 250px;
+        gap: 10px;
+        background-color: #f6f6f6;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav .nav-menu .nav-item {
+        background: none;
+        width: 100%;
+    }
+    .nav .nav-menu .nav-link{
+        color: black;
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+    }
 
     html,
     body {
