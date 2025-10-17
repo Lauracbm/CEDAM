@@ -84,97 +84,83 @@
 
         <div class="bg-gray-800 w-[130vh] h-[60vh] absolute z-0 mt-70 rounded-[60px]"></div>
 
+            
+            
 
-
-        <section class="h-[80vh] w-[140vh] flex items-center justify-center gap-0 mt-30 z-0">
-
-            <!-- Cada crayon ahora lleva un data-info -->
-            <a href="" class="hover:scale-100 hover:-mt-50 transition-transform"
-            data-info="Ruta Escolar: TRANSPORTE SEGURO PARA LOS ESTUDIANTES.">
-                <img src="/IMG/crayon1.png" alt="" class="h-[600px] mt-30">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Ruta <br>Escolar</h1>
-            </a>
-
-            <a href="#" class="hover:scale-100 hover:-mt-50 transition-transform"
-                data-info="Tienda Escolar: Productos saludables y útiles.">
-                <img src="/IMG/crayon2.png" alt="" class="h-[600px] mt-20">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Tienda <br>Escolar</h1>
-            </a>
-
-            <a href="#" class="hover:scale-100 hover:-mt-30 transition-transform" data-info="Onces Escolares: Refrigerios nutritivos.">
-                <img src="/IMG/crayon3.png" alt="" class="h-[600px] mt-10">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Onces <br>Escolares</h1>
-            </a>
-
-            <a href="#" class="hover:-mt-20 transition-transform"
-                data-info="Almuerzo Escolar: Alimentación completa y balanceada.">
-                <img src="/IMG/crayon4.png" alt="" class="h-[600px] mt-5">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Almuerzo <br> Escolar</h1>
-            </a>
-
-            <a href="#" class="hover:-mt-20 transition-transform"
-                data-info="Asesoría en Tareas: Apoyo académico diario.">
-                <img src="/IMG/crayon5.png" alt="" class="h-[600px] mt-10">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Asesoría <br>Tareas</h1>
-            </a>
-
-            <a href="#" class="hover:-mt-20 transition-transform"
-                data-info="Jornada Adicional: Actividades extracurriculares.">
-                <img src="/IMG/crayon6.png" alt="" class="h-[600px] mt-10">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Jornada <br>Adicional</h1>
-            </a>
-
-            <a href="#" class="hover:-mt-20 transition-transform"
-                data-info="Nivelación Inglés: Refuerzo en competencias del idioma.">
-                <img src="/IMG/crayon7.png" alt="" class="h-[600px] mt-22">
-                <h1 class="text-gray-800 -mt-105 text-center text-[20px] font-extrabold">Nivelación <br>Inglés</h1>
-            </a>
-        </section>
-
-        <!-- Modal -->
-        <div id="modal" class="hidden fixed flex items-center justify-center z-50 mb-40">
-            <div class="bg-white/80 p-8 rounded-2xl shadow-lg w-[100vh] h-[50vh] text-center">
-                <h2 class="text-2xl font-bold mb-4">Servicio</h2>
-                <p id="modal-text" class="text-gray-700"></p>
-            </div>
-        </div>
-
-        <script>
-            const crayons = document.querySelectorAll("section a");
-            const modal = document.getElementById("modal");
-            const overlay = document.getElementById("overlay");
-            const modalText = document.getElementById("modal-text");
-
-            crayons.forEach(crayon => {
-                crayon.addEventListener("mouseenter", () => {
-                    modalText.textContent = crayon.getAttribute("data-info");
-                    modal.classList.remove("hidden");
-                    overlay.classList.remove("hidden");
-                });
-
-                crayon.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!modal.matches(":hover")) {
-                            modal.classList.add("hidden");
-                            overlay.classList.add("hidden");
-                        }
-                    }, 200);
-                });
-            });
-
-            modal.addEventListener("mouseleave", () => {
-                modal.classList.add("hidden");
-                overlay.classList.add("hidden");
-            });
-
-            overlay.addEventListener("mouseenter", () => {
-                modal.classList.add("hidden");
-                overlay.classList.add("hidden");
-            });
-        </script>
-
-
+    
     </main>
+
+    <section
+  class="items h-[170vh] w-full flex flex-col items-left justify-center -mt-80 z-0 bg-[url('/IMG/gris_paper_1.png')] bg-fixed bg-cover">
+
+  <!-- 🔹 Crayón con <a> original -->
+  <a href="javascript:void(0)" onclick="toggleInfo('rutaEscolar')" 
+     class="crayola transition-transform hover:scale-105 -ml-150">
+    <div class="relative flex flex-col items-center">
+      <img src="/IMG/crayon1.png" alt="Crayón"
+        class="h-[130px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+      <h2
+        class="z-10 text-orange-300 absolute mt-8 text-[30px] font-extrabold bg-gray-800/90 h-15 w-60 text-center pt-2 rounded-full mr-10">
+        Ruta Escolar
+      </h2>
+    </div>
+  </a>
+
+  <!-- 🔸 Drop-down -->
+  <div id="rutaEscolar"
+    class="hidden relative left-200 bg-white/90 backdrop-blur-md border-8 border-orange-400 rounded-2xl shadow-xl w-[400px] p-4 text-gray-700 mt-4 z-20">
+
+    <h3 class="text-xl font-semibold text-orange-400 mb-2 text-center">Servicio de Ruta Escolar</h3>
+    <p class="text-sm mb-3 text-center">
+      Transporte seguro y confiable para nuestros estudiantes, con rutas designadas y acompañamiento diario.
+    </p>
+
+    <!-- 🔹 Slider -->
+    <div class="relative overflow-hidden rounded-lg h-[160px] mb-3">
+      <div id="sliderRuta" class="flex transition-transform duration-500">
+        <img src="/IMG/bus1.jpg" class="w-[320px] h-[160px] object-cover" alt="">
+        <img src="/IMG/bus2.jpg" class="w-[320px] h-[160px] object-cover" alt="">
+        <img src="/IMG/bus3.jpg" class="w-[320px] h-[160px] object-cover" alt="">
+      </div>
+
+      <div class="flex justify-center mt-2">
+        <button onclick="moveSlide('sliderRuta', -1, event)" 
+                class="mx-2 bg-orange-300 hover:bg-orange-400 text-white px-2 py-1 rounded">◀</button>
+        <button onclick="moveSlide('sliderRuta', 1, event)" 
+                class="mx-2 bg-orange-300 hover:bg-orange-400 text-white px-2 py-1 rounded">▶</button>
+      </div>
+    </div>
+
+    <p class="text-xs text-center italic">Conoce más en la sección de servicios</p>
+  </div>
+</section>
+
+<script>
+function toggleInfo(id) {
+  const info = document.getElementById(id);
+  const isVisible = !info.classList.contains('hidden');
+  document.querySelectorAll('section .hidden, section [id^="ruta"]').forEach(el => el.classList.add('hidden'));
+  if (!isVisible) info.classList.remove('hidden');
+}
+
+function moveSlide(sliderId, direction, event) {
+  event.stopPropagation();
+  const slider = document.getElementById(sliderId);
+  const total = slider.children.length;
+  const slideWidth = 320;
+  const style = getComputedStyle(slider);
+  const transform = style.transform.match(/matrix\(1, 0, 0, 1, (-?\d+(\.\d+)?), 0\)/);
+  const offset = transform ? parseFloat(transform[1]) : 0;
+  const currentIndex = Math.abs(offset / slideWidth);
+  let newIndex = direction > 0 ? currentIndex + 1 : currentIndex - 1;
+
+  if (newIndex < 0) newIndex = total - 1;
+  if (newIndex >= total) newIndex = 0;
+
+  slider.style.transform = `translateX(-${newIndex * slideWidth}px)`;
+}
+</script>
+
 
 
 
