@@ -377,30 +377,26 @@ a {
     /*extras*/
 
     #extras {
-        height: 200vh;
+        height: 270vh;
     }
 
     #extras h2 {
         font-size: 30px;
     }
 
-    .list {
-        display: flex;
-        flex-direction: column;
-        gap: 90px;
+    .extras-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .list a {
-        height: 100px;
-        width: 300px;
-        border-radius: 20px;
-        padding: 10px;
+    .extras-item {
+        position: relative;
+        height: 350px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .list a img {
-        height: 180px;
-        width: auto;
-    }
 
     img.palette {
         position: absolute;
@@ -459,6 +455,11 @@ a {
         width: 250px;
     }
 
+    .form-1{
+        flex-direction: column;
+        gap: 10px;
+    }
+
     #formulario h3 {
         font-size: 20px;
     }
@@ -467,6 +468,10 @@ a {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    button h3{
+        display: none;
     }
 
     .ff input,
@@ -551,5 +556,9 @@ a {
         margin-top: 90px;
         font-size: 8px;
         width: 150px;
+    }
+
+    .phrase{
+        display: none;
     }
 }
