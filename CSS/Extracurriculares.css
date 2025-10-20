@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1,
+h2 {
+    font-family: Margarine;
+}
+
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 800;
+    color: #ec4899;
+}
+
+p {
+    font-family: "Playpen Sans", cursive;
+    font-weight: 500;
+}
+
+.options:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Sour Gummy", sans-serif;
+}

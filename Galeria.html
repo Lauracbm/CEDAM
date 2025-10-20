@@ -14,9 +14,9 @@
 <body>
 
 
-    <header class="w-full top-0 z-50 nav">
+    <header class="w-full top-0 z-50 nav fixed">
         <nav class=" mx-auto">
-            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
+            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15 z-30 relative">
 
                 <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
@@ -45,12 +45,12 @@
                 </a>
             </div>
             <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class="z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
-                <use xlink:href="Assets\sprite.svg#cloud"></use>
+            <svg viewBox="0 0 1440 90" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
+                <use xlink:href="Assets/clouds-top.svg"></use>
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
+                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
                 <li
                     class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
@@ -61,7 +61,7 @@
                     <a href="Campamentos.html">Campamentos</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15">
                     <a href=""> Gestión académica</a>
                 </li>
                 <li
@@ -79,10 +79,8 @@
 
 
     <main class="bg-blue-950">
-
-
         <section
-            class="flex flex-col justify-center items-center h-[110vh] bg-gradient-to-b from-blue-950 via-blue-700 to-blue-500 -mt-25 z-50">
+            class="flex flex-col justify-center items-center h-[150vh] bg-gradient-to-b from-blue-950 via-blue-700 to-blue-500 -mt-25 z-50">
 
             <img src="./IMG/starlight.png" class="starlight absolute w-full mt-1 z-00" alt="">
 

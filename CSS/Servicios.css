@@ -82,7 +82,7 @@ a {
     
     /*hero*/
     .hero {
-        height: 200vh;
+        height: 50vh;
     }
 
     .hero img.cLogo {
@@ -110,27 +110,30 @@ a {
     /*contenido del contenido de la imagen que contiene las crayolas que contienen los titulos de los servicios*/
 
     .box {
-        rotate: 90deg;
-        transform: translateY(50%);
-        margin-top: -150px;
-        width: 400px;
+        display: none;
     }
 
     .items {
+        height: 150vh;
         margin-top: -140px;
-        margin-left: 200px;
-        rotate: 90deg;
         gap: 10px;
     }
 
     .items .crayola img{
         width: 400px;
         height: auto;
+        margin-left: 400px;
     }
 
-    .items .crayola h2 {
-        rotate: -90deg;
+    .crayola h2 {
+        padding-bottom: 5px;
+        margin-top: 25px;
+        font-size: 20px;
+        width: 160px;
+        margin-left: 400px;
+        height: auto;
     }
+
 
     /*footer*/
 
@@ -168,5 +171,9 @@ a {
         margin-top: 90px;
         font-size: 8px;
         width: 150px;
+    }
+
+    .phrase{
+        display: none;
     }
 }
