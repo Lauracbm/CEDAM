@@ -1,0 +1,14 @@
+<svg viewBox="0 0 786 160" xmlns="http://www.w3.org/2000/svg" class="crayon">
+
+<rect width="786" height="160" class="crayon-bg"/>
+
+<rect width="800" height="250" transform="matrix(-1 0 0 -1 790 200)" class="crayon-bg-alt"/>
+
+<path d="M0 10C0 4.47715 4.47715 0 10 0H611.5C617.023 0 621.5 4.47715 621.5 10V10.5C621.5 10.5 785.5 56.5 785.5 83.5C785.5 110.5 621.5 148.5 621.5 148.5V150C621.5 155.523 617.023 160 611.5 160H9.99999C4.47715 160 0 155.523 0 150V10Z" class="crayon-body" />
+
+<path d="M14 0H604V160H14V0Z" class="crayon-label"/>
+
+<path d="M30 2C30 0.895429 30.8954 0 32 0H45C46.1046 0 47 0.895431 47 2V158C47 159.105 46.1046 160 45 160H32C30.8954 160 30 159.105 30 158V2Z" class="crayon-detail"/>
+
+<path d="M571 2C571 0.895429 571.895 0 573 0H586C587.105 0 588 0.895431 588 2V158C588 159.105 587.105 160 586 160H573C571.895 160 571 159.105 571 158V2Z" class="crayon-detail"/>
+</svg>

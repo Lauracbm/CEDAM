@@ -59,7 +59,7 @@ a {
     }
 
     .logo img {
-        height: 30px;
+        height: 40px;
     }
 
     #top a {
@@ -82,27 +82,27 @@ a {
     
     /*hero*/
     .hero {
-        height: 50vh;
+        height: auto;
+        min-height: 30vh;
     }
 
     .hero img.cLogo {
-        height: 60px;
-        width: 60px;
+        height: auto;
+        width: 20%;
         margin-left: 30px;
-        margin-top: -500px;
+        margin-top: 70px;
     }
 
     .hero h1 {
-        font-size: 40px;
-        line-height: 45px;
+        font-size: 50px;
         text-align: center;
-        margin-top: -950px;
+        margin-top: 50px;
     }
 
     .hero p {
-        width: 300px;
+        width: 200px;
         text-align: center;
-        margin-top: -870px;
+        margin-top: 70px;
         font-weight: 400;
         font-size: 12px;
     }
@@ -114,26 +114,32 @@ a {
     }
 
     .items {
-        height: 150vh;
+        height: auto;
+        min-height: 90vh;
         margin-top: -140px;
         gap: 10px;
     }
 
     .items .crayola img{
-        width: 400px;
-        height: auto;
+        width: auto;
+        height: 60px;
         margin-left: 400px;
     }
 
     .crayola h2 {
         padding-bottom: 5px;
-        margin-top: 25px;
-        font-size: 20px;
-        width: 160px;
+        margin-top: 15px;
+        padding-inline: 10px;
+        font-size: 10px;
+        width: auto;
         margin-left: 400px;
         height: auto;
     }
 
+    .crayola hr{
+        width: auto;
+        margin-left: 5px;
+    }
 
     /*footer*/
 
@@ -163,7 +169,7 @@ a {
         margin-top: -100px;
     }
     .logof img{
-        width: 30px;
+        width: 20%;
         height: auto;
     }
 

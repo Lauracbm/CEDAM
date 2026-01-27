@@ -46,7 +46,7 @@ a {
         width: 100vw;
         min-width: 0;
         max-width: 100vw;
-        height: 60px;
+        height: auto;
         gap: 10px;
         padding: 0 10px;
         box-sizing: border-box;
@@ -87,9 +87,7 @@ a {
 
     /*hero*/
     .hero {
-        max-height: 65vh;
-        height: 65vh;
-        min-height: 65vh;
+        height: auto !important;
         width: 100vw !important;
         flex-direction: column;
         align-items: center;
@@ -100,7 +98,7 @@ a {
 
 
     .hero img.cLogo {
-        height: 70px;
+        height: auto;
         width: 70px;
         margin-top: 200px;
         z-index: 2;
@@ -165,7 +163,7 @@ a {
 
     .hero img.campfire {
         margin-bottom: 10px;
-        height: 200px;
+        height: auto;
     }
 
     .hero img.camcam {
@@ -179,7 +177,7 @@ a {
         padding-top: 80px;
         flex-direction: column;
         padding-top: -30px;
-        height: 130vh;
+        height: auto;
         width: 100vw;
         box-sizing: border-box;
     }
@@ -253,34 +251,6 @@ a {
     .gallery h2{
         display: none;
     }
-
-   /* .gallery {
-        display: none;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 5px;
-        position: relative;
-        bottom: 50px;
-        z-index: 20;
-    }
-
-    
-
-    .goTo .minicloud {
-        display: block;
-        position: relative;
-        height: 90px;
-        width: auto;
-        z-index: 20;
-    }
-
-
-    .goTo .folderw {
-        height: 90px;
-        margin-left: 10px;
-    }*/
-
-    /*footer*/
     /*footer*/
 
     footer svg.cloud-bottom {
@@ -292,7 +262,7 @@ a {
 
     footer a{
         margin-top: 30px;
-        height: 25px;
+        height: auto;
         width: 25px;
     }
 
