@@ -94,8 +94,17 @@
                 <div class="optionu flex flex-row gap-2 justify-between z-30 mt-60">
 
 
-                    <a href="https://colegiobilinguecedam.com"
-                        class="flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10  transition">
+                    <a href="javascript:void(0)"
+                        class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10  transition"
+                        data-nombre="PREESCOLAR"
+                        data-foto="/IMG/preschool.webp" 
+                        data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
+                        ★ Camisa blanca, rosa o azul tipo polocon con el logo del colegio.
+                        ★ Medias blancas (No tobilleras)
+                        ★ Tennis que conbinen con la sudadera
+                        ★ Delantal del colegio
+                        ★ Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
+                        Se utiliza el delantal todos los días, los niños llegan con el delantal puesto desde casa.">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[170px]">
                         <h1
                             class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25 text-center absolute ml-22">
@@ -103,8 +112,16 @@
                     </a>
 
 
-                    <a href=""
-                        class="flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30  transition ">
+                    <a href="javascript:void(0)"
+                        class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30  transition"
+                        data-nombre="SUDADERA"
+                        data-foto="/IMG/sudadera.webp" 
+                        data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
+                        ★ Camisa blanca, rosa o azul tipo polo con con el logo del colegio.
+                        ★ Medias blancas (No tobilleras)
+                        ★ Tennis que combinen con la sudadera
+                        ★ Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
+                        Se utiliza para todos los grados">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[190px]">
                         <h1
                             class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-25">
@@ -114,22 +131,58 @@
 
                 <div class="optionu flex flex-row gap-2 justify-between z-30 mt-60">
 
-                    <a href=""
-                        class="flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30 transition ">
+                    <a href="javascript:void(0)"
+                        class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30 transition"
+                        data-nombre="UNIFORME DE DIARIO OPCION 1"
+                        data-foto="/IMG/diario.webp" 
+                        data-desc="NIÑAS
+                        ★ Jardinera azul oscuro con logo del colegio.
+                        ★ Media pantalón azul oscura en cachemire.
+                        ★ camisa blanca manga larga con cuello bebé.
+                        ★ zapatos azul oscuro tipo mafalda.
+                        ★ Chaqueta azul oscura para invierno con los logos del colegio.
+
+                        NIÑOS
+                        ★Chaqueta azul oscura para invierno con los logos del colegio.
+                        ★ Camiseta blanca tipo polo con el logo del colegio.
+                        ★ Pantalón azul oscuro de lino.
+                        ★ Media azul oscura.
+                        ★ Zapatos de amarrar azul oscuro con cordones azul oscuro.
+                        ">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[190px]">
                         <h1
                             class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-25">
                             Diario</h1>
                     </a>
 
-                    <a href=""
-                        class="flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10 transition">
+                    <a href="javascript:void(0)"
+                        class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10 transition"
+                        data-nombre="UNIFORME DE DIARIO OPCION 2"
+                        data-foto="/IMG/buzo.webp" 
+                        data-desc="★ Pantalon tipo cargo azul oscuro
+                        ★ Buzo CBC
+                        ★ Tennis que combinen con el buzo
+                        ">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[180px]">
                         <h1
                             class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-22">
                             Buzo</h1>
                     </a>
                 </div>
+            </div>
+
+            <div id="modal-container" class="fixed inset-0 bg-black/80 flex items-center justify-center z-[500] hidden p-4">
+
+            <div
+                class="bg-white rounded-3xl p-8 max-w-3xl w-full relative flex flex-col items-center text-center">
+
+                <button id="modal-close"
+                    class="fixed top-1/4 right-5 top-4 right-4 text-yellow-400 hover:text-red-500 text-3xl font-bold object-cover">&times;</button>
+
+                <h3 id="modal-title" class="text-2xl font-black mb-4 text-gray-900"></h3>
+                <img id="modal-img" src="" alt="" class="w-100 h-60 mb-4 drop-shadow-lg rounded-lg object-cover">
+                <p id="modal-text" class="text-gray-600 text-lg text-justify font-medium"></p>
+
             </div>
         </section>
 
@@ -176,6 +229,50 @@
         </div>
 
     </footer>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const triggers = document.querySelectorAll('.cloud-btn');
+            const modal = document.getElementById('modal-container');
+            const mImg = document.getElementById('modal-img');
+            const mTitle = document.getElementById('modal-title');
+            const mText = document.getElementById('modal-text');
+            const closeBtn = document.getElementById('modal-close');
+
+            triggers.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const nombre = btn.getAttribute('data-nombre');
+                    const foto = btn.getAttribute('data-foto');
+                    const desc = btn.getAttribute('data-desc');
+                    const nota = btn.getAttribute('data-nota');
+
+
+                    mTitle.innerText = nombre;
+                    mText.innerText = desc;
+                    mImg.src = foto;
+                    
+
+
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            const cerrarModal = () => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            };
+
+            closeBtn.addEventListener('click', cerrarModal);
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) cerrarModal();
+            });
+        });
+    </script>
 </body>
 
 </html>

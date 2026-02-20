@@ -4,11 +4,13 @@
 
 
 h1,
-h2, textPath {
+h2,
+textPath {
     font-family: Margarine;
 }
 
-#formulario input, textarea{
+#formulario input,
+textarea {
     font-family: Margarine;
 }
 
@@ -40,8 +42,34 @@ a {
     font-family: "Sour Gummy", sans-serif;
 }
 
-.crayolay, .crayolag {
+.crayolay,
+.crayolag {
     display: none;
+}
+
+.sub-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 40%;
+    display: none;
+    min-width: 100px;
+}
+
+.matriculas:disabled {
+    background-color: #ccc;
+    color: #666;
+    background-color: #ccc;
+    cursor: none;
+    opacity: 0.6;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.drop-down:hover .sub-menu {
+    display: block;
 }
 
 
@@ -49,10 +77,10 @@ a {
 
     .nav :where(#menu-close-button, #menu-open-button) {
         font-size: large;
-       
+
     }
 
-    .nav #menu-close-button{
+    .nav #menu-close-button {
         position: absolute;
         right: 30px;
         bottom: 250px;
@@ -79,7 +107,8 @@ a {
         background: none;
         width: 100%;
     }
-    .nav .nav-menu .nav-link{
+
+    .nav .nav-menu .nav-link {
         color: black;
         display: block;
         margin-top: 10px;
@@ -256,7 +285,7 @@ a {
         margin-left: -150px;
         margin-top: 0px;
         border-radius: 50%;
-        background-color: #ec4899 ;
+        background-color: #ec4899;
     }
 
     #About a img {
@@ -302,7 +331,7 @@ a {
         z-index: 2;
         position: static;
     }
-  
+
 
     #mision p {
         font-size: 12px;
@@ -320,7 +349,7 @@ a {
     #mision h2 {
         font-size: 25px;
         font-weight: 700;
-        margin-left:40px;
+        margin-left: 40px;
         margin-top: -330px;
         z-index: 2;
         position: static;
@@ -329,7 +358,7 @@ a {
 
     /*vision*/
 
-    #vision{
+    #vision {
         flex-direction: column;
         align-items: flex-start;
         width: 100vw;
@@ -341,7 +370,7 @@ a {
         font-weight: 600;
         margin-right: auto;
         margin-left: auto;
-        padding-inline:  35px;
+        padding-inline: 35px;
         margin-top: 30px;
         position: static;
         width: auto;
@@ -457,7 +486,7 @@ a {
         width: 250px;
     }
 
-    .form-1{
+    .form-1 {
         flex-direction: column;
         gap: 10px;
     }
@@ -472,7 +501,7 @@ a {
         gap: 10px;
     }
 
-    button h3{
+    button h3 {
         display: none;
     }
 
@@ -521,7 +550,7 @@ a {
         height: 200px;
         margin: 0px 10px 20px 10px;
     }
- 
+
     /*footer*/
 
     footer svg.cloud-bottom {
@@ -531,36 +560,37 @@ a {
     }
 
 
-    footer a{
+    footer a {
         margin-top: 30px;
         height: 25px;
         width: 25px;
     }
 
-    #social{
+    #social {
         gap: 10px;
         margin-top: 40px;
     }
 
-    .logof{
+    .logof {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 40px;
         margin-top: -100px;
     }
-    .logof img{
+
+    .logof img {
         width: 30px;
         height: auto;
     }
 
-    .logof p{
+    .logof p {
         margin-top: 90px;
         font-size: 8px;
         width: 150px;
     }
 
-    .phrase{
+    .phrase {
         display: none;
     }
 }
