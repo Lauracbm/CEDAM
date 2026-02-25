@@ -8,89 +8,83 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
     <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
 </head>
 
 <body class="">
-    <header class="w-full top-0 z-50 nav fixed">
-        <nav class=" mx-auto">
-            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15">
 
-                <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+
+    <header class="w-full top-0 z-50 nav fixed">
+        <nav class="nav mx-auto">
+            <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15 z-30 relative">
+
+
+                <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
-                    <svg width="28" height="28">
+                    <svg width="28" height="28" class="social">
                         <use xlink:href="./Assets/spritee.svg#instagram" />
                     </svg>
                 </a>
 
-                <div class="flex flex-row items-center gap-4">
-                    <img src="IMG/logo_sin_fondo.png" alt="logo" class="h-16">
+                <div class="logo flex flex-row items-center gap-4">
+                    <img src="IMG/logo_sin_fondo.webp" alt="logo" class="h-16">
                     <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
                 </div>
 
-                <a class="bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
+                <a class=" social bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
                     href="https://www.facebook.com/Colegiobilinguecedam" target="_blank">
-                    <svg width="50" height="50">
+                    <svg width="50" height="50" class="social">
                         <use xlink:href="./assets/spritee.svg#facebook" />
                     </svg>
                 </a>
 
-                <a href="Index.html"
-                    class="rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
-                    <span class="material-icons-round text-white ">
-                        home
-                    </span>
-                </a>
+                <button id="menu-open-button" class="fas fa-bars text-black"></button>
             </div>
             <!--Cloud-->
-            <svg viewBox="0 150 1400 324" class="z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
-                <use xlink:href="Assets\sprite.svg#cloud"></use>
+            <svg viewBox="0 0 1440 90" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
+                <use xlink:href="Assets/clouds-top.svg"></use>
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-90 mb-8 ">
+                class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
+                <!--<button id="menu-close-button" class="fas fa-times text-black"></button>-->
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-full flex items-center justify-center min-w-[120px]">
-                    <a href="/Galeria.html" class=" h-10 mt-4"> Galería</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Galeria.html" class="nav-link"> Galería</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-full flex items-center justify-center min-w-[120px]">
-                    <a href="/Campamentos.html" class=" h-10 mt-4">Campamentos</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Campamentos.html" class="nav-link">Campamentos</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-full flex items-center justify-center min-w-[120px]">
-                    <a href="/" class=" h-10 mt-4"> Gestión académica</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15 drop-down">
+                    <a href="/" class="nav-link">Gestión académica</a>
+                    <ul class="sub-menu bg-pink-700/80 rounded-[20px] flex flex-col -gap-10 items-center justify-center text-center">
+                            <li class="hover:bg-pink-800 rounded-[90px]"><button>Certificados</button></li>
+                            <li class="hover:bg-pink-800 rounded-[90px]"><button>Informes Valorativos</button></li>
+                            <li class=""><button class="matriculas">Matriculas</button></li>
+                    </ul>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-full flex items-center justify-center min-w-[120px]">
-                    <a href="/Uniformes.html" class=" h-10 mt-4">Uniformes</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Uniformes.html" class="nav-link">Uniformes</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-full flex items-center justify-center min-w-[120px]">
-                    <a href="/Servicios.html" class=" h-10 mt-4">Servicios</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Servicios.html" class="nav-link">Servicios</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
     <main
         class="h-[100vh] bg-gradient-to-t from-blue-950 via-blue-700 to-blue-500 mt-15 z-50 flex flex-col items-center justify-centerx">
-        <section class="title">
-            <h1 class="text-yellow-300 font-extrabold text-[40px] mt-25">Galería Cedam | apartado</h1>
-
-            <section class="flex flex-row justify-center items-start gap-10 mt-10">
-                <div class="photos-list"></div>
-                <aside>
-                    <ul class="text-white font-bold text-[20px] flex flex-col items-end justify-around gap-4 mt-10 ">
-                        <div><a href="Galeria_Content.html">Instalaciones</a></div>
-                        <div><a href="Galeria_Content.html">Campamentos</a></div>
-                        <div><a href="Galeria_Content.html">Eventos</a></div>
-                        <div><a href="Galeria_Content.html">Uniformes</a></div>
-                        <div><a href="Galeria_Content.html">Salidas Pedagógicas</a></div>
-                    </ul>
-                </aside>
-            </section>
+        <section id="galeria" class="w-full max-w-screen-2xl p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
 
         </section>
     </main>
@@ -134,6 +128,49 @@
 
     </footer>
 
+     <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                const galleryParam = urlParams.get('gallery');
+                console.log(galleryParam);
+                let galleryItems = [];
+
+                for (let i = 0; i < 20; i++) {
+                    galleryItems.push({
+                        href: `https://picsum.photos/200/200?random=${i}`,
+                        hrefImg: `https://picsum.photos/800/600?random=${i}`,
+                        type: 'image'
+                    });
+                }
+
+                const galleryDiv = document.getElementById('galeria');
+
+                function addToGallery(item) {
+                    const newLink = document.createElement('a');
+                    newLink.href = item.hrefImg;
+                    newLink.classList.add('glightbox');
+                    const newImg = document.createElement('img');
+                    newImg.src = item.href;
+                    newLink.appendChild(newImg);
+                    galleryDiv.appendChild(newLink);
+                }
+
+                galleryItems.forEach(item => {
+                    addToGallery(item);
+                });
+
+
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const lightbox = GLightbox({
+                        selector: '.glightbox',
+                        touchNavigation: true,
+                        loop: true,
+                        autoplayVideos: true
+                    });
+                });
+
+
+            </script>
 
 </body>
 

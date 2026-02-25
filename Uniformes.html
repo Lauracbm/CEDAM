@@ -96,9 +96,7 @@
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10  transition"
-                        data-nombre="PREESCOLAR"
-                        data-foto="/IMG/preschool.webp" 
-                        data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
+                        data-nombre="PREESCOLAR" data-foto="/IMG/preescolar.jpg" data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
                         ★ Camisa blanca, rosa o azul tipo polocon con el logo del colegio.
                         ★ Medias blancas (No tobilleras)
                         ★ Tennis que conbinen con la sudadera
@@ -114,13 +112,12 @@
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30  transition"
-                        data-nombre="SUDADERA"
-                        data-foto="/IMG/sudadera.webp" 
-                        data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
+                        data-nombre="SUDADERA" data-foto="/IMG/sudadera.jpg" data-desc="
+                        ★ Sudadera azul oscuro con logos respectivos del colegio.
                         ★ Camisa blanca, rosa o azul tipo polo con con el logo del colegio.
                         ★ Medias blancas (No tobilleras)
                         ★ Tennis que combinen con la sudadera
-                        ★ Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
+                        ★Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
                         Se utiliza para todos los grados">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[190px]">
                         <h1
@@ -133,17 +130,15 @@
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30 transition"
-                        data-nombre="UNIFORME DE DIARIO OPCION 1"
-                        data-foto="/IMG/diario.webp" 
-                        data-desc="NIÑAS
+                        data-nombre="UNIFORME DE DIARIO OPCION 1" data-foto="/IMG/DIARIO.png" data-desc="NIÑAS
                         ★ Jardinera azul oscuro con logo del colegio.
                         ★ Media pantalón azul oscura en cachemire.
                         ★ camisa blanca manga larga con cuello bebé.
                         ★ zapatos azul oscuro tipo mafalda.
                         ★ Chaqueta azul oscura para invierno con los logos del colegio.
-
+                        " data-desc2="
                         NIÑOS
-                        ★Chaqueta azul oscura para invierno con los logos del colegio.
+                        ★ Chaqueta azul oscura para invierno con los logos del colegio.
                         ★ Camiseta blanca tipo polo con el logo del colegio.
                         ★ Pantalón azul oscuro de lino.
                         ★ Media azul oscura.
@@ -157,11 +152,16 @@
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10 transition"
-                        data-nombre="UNIFORME DE DIARIO OPCION 2"
-                        data-foto="/IMG/buzo.webp" 
-                        data-desc="★ Pantalon tipo cargo azul oscuro
-                        ★ Buzo CBC
-                        ★ Tennis que combinen con el buzo
+                        data-nombre="UNIFORME DE DIARIO OPCION 2" data-foto="/IMG/buzocbc.jpg" data-desc="
+                        ★Para niñas pantalon tipo cargo azul oscuro o jardinera azul oscuro con el logo del colegio.
+                        
+                        ★Pantalon tipo cargo azul oscuro
+
+                        ★Camisa tipo polo con el logo del colegio.
+
+                        ★Buzo CBC
+
+                        ★Tennis que combinen con el buzo
                         ">
                         <img src="/IMG/minicloudsewing.webp" alt="" class="h-[180px]">
                         <h1
@@ -171,19 +171,26 @@
                 </div>
             </div>
 
-            <div id="modal-container" class="fixed inset-0 bg-black/80 flex items-center justify-center z-[500] hidden p-4">
+            <div id="modal-container"
+                class="fixed inset-0 bg-black/80 flex items-center justify-center z-[500] hidden p-4">
 
-            <div
-                class="bg-white rounded-3xl p-8 max-w-3xl w-full relative flex flex-col items-center text-center">
+                <div class="bg-white rounded-3xl p-8 max-w-3xl w-full relative flex flex-col items-center text-center">
 
-                <button id="modal-close"
-                    class="fixed top-1/4 right-5 top-4 right-4 text-yellow-400 hover:text-red-500 text-3xl font-bold object-cover">&times;</button>
+                    <button id="modal-close"
+                        class="fixed top-1/4 right-5 top-4 right-4 text-yellow-400 hover:text-red-500 text-3xl font-bold object-cover">&times;</button>
 
-                <h3 id="modal-title" class="text-2xl font-black mb-4 text-gray-900"></h3>
-                <img id="modal-img" src="" alt="" class="w-100 h-60 mb-4 drop-shadow-lg rounded-lg object-cover">
-                <p id="modal-text" class="text-gray-600 text-lg text-justify font-medium"></p>
+                    <h3 id="modal-title" class="text-2xl font-black mb-4 text-gray-900"></h3>
 
-            </div>
+                    <div class="flex flex-row gap-4 items-start">
+                        <img id="modal-img" src="" alt=""
+                            class="w-100 h-130 mb-4 drop-shadow-lg rounded-lg object-cover">
+                        <div class="flex flex-col gap-4">
+                            <p id="modal-text" class="text-gray-600 text-lg text-justify font-medium"></p>
+                            <p id="modal-text-2" class="text-gray-600 text-lg text-justify font-medium hidden"></p>
+                        </div>
+                    </div>
+
+                </div>
         </section>
 
 
@@ -230,7 +237,7 @@
 
     </footer>
 
-     <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
 
             const triggers = document.querySelectorAll('.cloud-btn');
@@ -239,6 +246,7 @@
             const mTitle = document.getElementById('modal-title');
             const mText = document.getElementById('modal-text');
             const closeBtn = document.getElementById('modal-close');
+            const mText2 = document.getElementById('modal-text-2');
 
             triggers.forEach(btn => {
                 btn.addEventListener('click', (e) => {
@@ -247,14 +255,21 @@
                     const nombre = btn.getAttribute('data-nombre');
                     const foto = btn.getAttribute('data-foto');
                     const desc = btn.getAttribute('data-desc');
-                    const nota = btn.getAttribute('data-nota');
-
-
-                    mTitle.innerText = nombre;
-                    mText.innerText = desc;
-                    mImg.src = foto;
+                    const desc2 = btn.getAttribute('data-desc2');
                     
+                    mTitle.innerText = nombre;
+                    mImg.src = foto;
+                    mText.innerText = desc;
+                    mText2.innerText = desc2;
 
+                    // 2. Lógica para la segunda descripción
+            if (desc2 && mText2) {
+                mText2.innerText = desc2;
+                mText2.classList.remove('hidden'); // La mostramos si existe
+            } else if (mText2) {
+                mText2.innerText = "";
+                mText2.classList.add('hidden'); // La ocultamos si no hay
+            }
 
                     modal.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
