@@ -12,8 +12,9 @@
 
 <body>
     <header class="w-full top-0 z-50 nav fixed">
-        <nav class="mx-auto">
+        <nav class="nav mx-auto">
             <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15 z-30 relative">
+
 
                 <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
@@ -25,7 +26,7 @@
 
                 <div class="logo flex flex-row items-center gap-4">
                     <img src="IMG/logo_sin_fondo.webp" alt="logo" class="h-16">
-                    <h1 class="text-3xl font-bold text-[#06039C]">Colegio Bilingüe Cedam</h1>
+                    <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
                 </div>
 
                 <a class=" social bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
@@ -35,12 +36,7 @@
                     </svg>
                 </a>
 
-                <a href="Index.html"
-                    class=" home rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
-                    <span class="material-icons-round text-white ">
-                        home
-                    </span>
-                </a>
+                <button id="menu-open-button" class="fas fa-bars text-black"></button>
             </div>
             <!--Cloud-->
             <svg viewBox="0 0 1440 90" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
@@ -48,30 +44,37 @@
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
+                class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
+                <!--<button id="menu-close-button" class="fas fa-times text-black"></button>-->
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Galeria.html"> Galería</a>
-                </li>
-
-                <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] ">
-                    <a href="Campamentos.html">Campamentos</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Galeria.html" class="nav-link"> Galería</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-10">
-                    <a href="/"> Gestión académica</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Campamentos.html" class="nav-link">Campamentos</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] ">
-                    <a href="Uniformes.html">Uniformes</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15 drop-down">
+                    <a href="/" class="nav-link">Gestión académica</a>
+                    <ul
+                        class="sub-menu bg-pink-700/80 rounded-[20px] flex flex-col -gap-10 items-center justify-center text-center">
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Certificados</button></li>
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Informes Valorativos</button></li>
+                        <li class=""><button class="matriculas">Matriculas</button></li>
+                    </ul>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Servicios.html">Servicios</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Uniformes.html" class="nav-link">Uniformes</a>
+                </li>
+                <li
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Servicios.html" class="nav-link">Servicios</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
@@ -214,7 +217,7 @@
 
 
 
-    <footer class="-mt-36 w-full">
+    <footer class="-mt-36 w-full bg-[#f6f6f6]">
         <svg viewBox="0 0 1440 220" class="cloud-bottom z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
             <use xlink:href="Assets\sprite.svg#cloud-bottom"></use>
         </svg>

@@ -30,36 +30,119 @@ a {
     font-family: "Sour Gummy", sans-serif;
 }
 
-@media screen and (max-width: 900px) {
+
+.sub-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 40%;
+    display: none;
+    min-width: 100px;
+}
+
+.matriculas:disabled {
+    background-color: #ccc;
+    color: #666;
+    background-color: #ccc;
+    cursor: none;
+    opacity: 0.6;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.drop-down:hover .sub-menu {
+    display: block;
+}
+
+.hero img.movil {
+    display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav :where(#menu-close-button, #menu-open-button) {
+        font-size: large;
+
+    }
+
+    .nav #menu-close-button {
+        position: absolute;
+        right: 30px;
+        bottom: 250px;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    .nav .nav-menu {
+        display: flex;
+        position: absolute;
+        left: 0%;
+        top: 30%;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30%;
+        gap: 10px;
+        background-color: #f6f6f6;
+        border-radius: 15%;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav .nav-menu .nav-item {
+        background: none;
+        width: 100%;
+    }
+
+    .nav .nav-menu .nav-link {
+        color: black;
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    html,
     body {
-        max-width: 100vw;
         width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
-    }
-
-    #top a.home {
-        display: none !important;
+        box-sizing: border-box;
     }
 
     #top {
-        width: calc(100vw - 60px);
-        /* Ajusta el ancho restando el espacio del botón eliminado */
+        width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
+        height: auto;
         gap: 10px;
-        justify-content: center;
+        padding: 0 10px;
     }
 
     .logo {
         gap: 5px;
+        flex-direction: row;
+        align-items: center;
     }
 
     .logo h1 {
         font-size: 17px;
+        text-align: center;
+        width: 100%;
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
+        width: auto;
     }
 
     #top a {
@@ -68,29 +151,27 @@ a {
         padding: 5px;
     }
 
-    #top {
-        width: 100vw;
-        gap: 10px;
-        justify-content: center;
-    }
-
     svg.cloud {
-        width: 100vw;
-        margin-top: -5px;
+        width: 100vw !important;
+        margin-top: -3px;
     }
 
-    
     /*hero*/
     .hero {
         height: auto;
-        min-height: 30vh;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 0;
     }
+
 
     .hero img.cLogo {
         height: auto;
         width: 20%;
         margin-left: 30px;
-        margin-top: 70px;
+        margin-top: 0px;
     }
 
     .hero h1 {
@@ -102,16 +183,18 @@ a {
     .hero p {
         width: 200px;
         text-align: center;
-        margin-top: 70px;
+        margin-top: 200px;
         font-weight: 400;
         font-size: 12px;
     }
 
-    /*contenido del contenido de la imagen que contiene las crayolas que contienen los titulos de los servicios*/
-
-    .box {
-        display: none;
+    .items {
+        height: auto;
+        max-height: 150vh;
+        margin-top: 50vh;
     }
+
+    /*contenido del contenido de la imagen que contiene las crayolas que contienen los titulos de los servicios*/
 
     .items {
         height: auto;
@@ -120,7 +203,7 @@ a {
         gap: 10px;
     }
 
-    .items .crayola img{
+    .items .crayola img {
         width: auto;
         height: 60px;
         margin-left: 400px;
@@ -136,7 +219,7 @@ a {
         height: auto;
     }
 
-    .crayola hr{
+    .crayola hr {
         width: auto;
         margin-left: 5px;
     }
@@ -145,41 +228,42 @@ a {
 
     footer svg.cloud-bottom {
         width: 100vw;
-        margin-top: 100px;
+        margin-top: 140px;
+        padding-top: 5px;
     }
 
-    
 
-    footer a{
+    footer a {
         margin-top: 30px;
         height: 25px;
         width: 25px;
     }
 
-    #social{
+    #social {
         gap: 10px;
         margin-top: 40px;
     }
 
-    .logof{
+    .logof {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 40px;
         margin-top: -100px;
     }
-    .logof img{
-        width: 20%;
+
+    .logof img {
+        width: 30px;
         height: auto;
     }
 
-    .logof p{
+    .logof p {
         margin-top: 90px;
         font-size: 8px;
         width: 150px;
     }
 
-    .phrase{
+    .phrase {
         display: none;
     }
 }

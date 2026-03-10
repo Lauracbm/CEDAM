@@ -7,14 +7,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Uniformes.css">
     <title>Uniformes</title>
 </head>
 
 <body>
     <header class="w-full top-0 z-50 nav fixed">
-        <nav class="mx-auto">
+        <nav class="nav mx-auto">
             <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15 z-30 relative">
+
 
                 <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
@@ -26,7 +27,7 @@
 
                 <div class="logo flex flex-row items-center gap-4">
                     <img src="IMG/logo_sin_fondo.webp" alt="logo" class="h-16">
-                    <h1 class="text-3xl font-bold text-[#06039C]">Colegio Bilingüe Cedam</h1>
+                    <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
                 </div>
 
                 <a class=" social bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
@@ -36,12 +37,7 @@
                     </svg>
                 </a>
 
-                <a href="Index.html"
-                    class=" home rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
-                    <span class="material-icons-round text-white ">
-                        home
-                    </span>
-                </a>
+                <button id="menu-open-button" class="fas fa-bars text-black"></button>
             </div>
             <!--Cloud-->
             <svg viewBox="0 0 1440 90" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
@@ -49,31 +45,40 @@
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-20 -mt-25 mb-8 ">
+                class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
+                <!--<button id="menu-close-button" class="fas fa-times text-black"></button>-->
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Galeria.html"> Galería</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Galeria.html" class="nav-link"> Galería</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Campamentos.html">Campamentos</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Campamentos.html" class="nav-link">Campamentos</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15">
-                    <a href="/"> Gestión académica</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15 drop-down">
+                    <a href="/" class="nav-link">Gestión académica</a>
+                    <ul
+                        class="sub-menu bg-pink-700/80 rounded-[20px] flex flex-col -gap-10 items-center justify-center text-center">
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Certificados</button></li>
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Informes Valorativos</button></li>
+                        <li class=""><button class="matriculas">Matriculas</button></li>
+                    </ul>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Uniformes.html">Uniformes</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Uniformes.html" class="nav-link">Uniformes</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Servicios.html">Servicios</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Servicios.html" class="nav-link">Servicios</a>
                 </li>
             </ul>
+
         </nav>
     </header>
+    
     <main
         class="hero bg-gradient-to-b from-blue-500 via-blue-800 to-blue-950 relative min-h-[120vh] flex  justify-center items-center overflow-hidden mt-15">
 
@@ -82,17 +87,13 @@
         <p class=" absolute w-150 z-30 text-center text-white -mt-40 w-[200px]">Da click en la nubes para ver más.</p>
 
 
-        <section class="absolute">
+        <section class="main">
 
-            <img src="./IMG/preschool.webp" class="Uniforms absolute -mt-20 ml-10 z-0 h-[390px]" alt="">
-            <img src="./IMG/sudadera.webp" class="Uniforms absolute mt-10 ml-90 z-0 h-[400px]" alt="">
-            <img src="./IMG/diario.webp" class="Uniforms absolute mt-10 ml-220 z-0 h-[400px]" alt="">
-            <img src="./IMG/buzo.webp" class="Uniforms absolute -mt-20 ml-290 z-0 h-[390px]" alt="">
+            <div class="uniform flex z-30">
 
-            <div class="flex gap-30 z-30">
+                <div class="optionu flex items-center gap-2 justify-between z-30 mt-60 p-10">
 
-                <div class="optionu flex flex-row gap-2 justify-between z-30 mt-60">
-
+                    <img src="./IMG/preschool.webp" class="Uniforms absolute -mt-80 z-0 h-[64vh]" alt="">
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10  transition"
@@ -103,13 +104,18 @@
                         ★ Delantal del colegio
                         ★ Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
                         Se utiliza el delantal todos los días, los niños llegan con el delantal puesto desde casa.">
-                        <img src="/IMG/minicloudsewing.webp" alt="" class="h-[170px]">
+                        
+                        <img src="/IMG/minicloudsewing.webp" alt="" class="w-[18vw] -ml-8">
                         <h1
-                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25 text-center absolute ml-22">
+                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25  absolute  ml-10 z-30">
                             Preescolar</h1>
                     </a>
 
+                </div>
 
+                <div class=" optionu flex flex-row gap-2 z-30 mt-60">
+
+                    <img src="./IMG/sudadera.webp" class="Uniforms absolute -mt-30 z-0 h-[60vh]" alt="">
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30  transition"
                         data-nombre="SUDADERA" data-foto="/IMG/sudadera.jpg" data-desc="
@@ -119,14 +125,15 @@
                         ★ Tennis que combinen con la sudadera
                         ★Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
                         Se utiliza para todos los grados">
-                        <img src="/IMG/minicloudsewing.webp" alt="" class="h-[190px]">
+                        <img src="/IMG/minicloudsewing.webp" alt="" class="w-[18vw] -ml-8">
                         <h1
-                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-25">
+                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25  absolute ml-12 z-30">
                             Sudadera</h1>
                     </a>
                 </div>
 
-                <div class="optionu flex flex-row gap-2 justify-between z-30 mt-60">
+                <div class="optionu flex flex-row gap-2 z-30 mt-60 ml-40">
+                    <img src="./IMG/diario.webp" class="Uniforms absolute -mt-30 z-0 h-[60vh]" alt="">
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30 transition"
@@ -144,11 +151,18 @@
                         ★ Media azul oscura.
                         ★ Zapatos de amarrar azul oscuro con cordones azul oscuro.
                         ">
-                        <img src="/IMG/minicloudsewing.webp" alt="" class="h-[190px]">
+                        <img src="/IMG/minicloudsewing.webp" alt="" class="w-[18vw] -ml-12">
                         <h1
-                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-25">
+                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25  absolute ml-10 z-30">
                             Diario</h1>
                     </a>
+
+                </div>
+                
+
+                <div class="optionu flex flex-row gap-2 z-30 mt-60">
+
+                    <img src="./IMG/buzo.webp" class="Uniforms absolute -mt-60  z-0 h-[65vh]" alt="">
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10 transition"
@@ -163,12 +177,13 @@
 
                         ★Tennis que combinen con el buzo
                         ">
-                        <img src="/IMG/minicloudsewing.webp" alt="" class="h-[180px]">
+                        <img src="/IMG/minicloudsewing.webp" alt="" class="w-[18vw] -ml-5">
                         <h1
-                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 z-30 w-25 text-center absolute ml-22">
+                            class="text-pink-500 font-bold text-[20px] rounded-full p-1 w-25  absolute ml-20 z-30">
                             Buzo</h1>
                     </a>
                 </div>
+
             </div>
 
             <div id="modal-container"
@@ -198,13 +213,13 @@
 
     <!--footer-->
 
-    <footer class="-mt-36 w-full">
-        <svg viewBox="0 0 1440 220" class=" z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+    <footer class="-mt-36 w-full bg-blue-950 ">
+        <svg viewBox="0 0 1440 220" class="cloud-bottom z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
             <use xlink:href="Assets\sprite.svg#cloud-bottom"></use>
         </svg>
-        <div class="h-20 flex flex-col justify-center items-center -mt-30 relative gap-4">
-            <p class=" text-gray-500 flex flex-row items-center gap-4"> <a href="https://colegiobilinguecedam.com"><img
-                        class="h-10" src="./IMG/logo_sin_fondo.webp" alt=""></a> 2025 Colegio Bilingüe Cedam.</p>
+        <div class="logof h-20 flex flex-col justify-center items-center -mt-30 relative gap-4">
+            <p class=" text-gray-500 flex flex-row items-center gap-4"><img class="h-10" src="./IMG/logo_sin_fondo.webp"
+                    alt="">Colegio Bilingüe CEDAM</p>
 
             <div id="social" class="flex flex-row gap-5">
 
@@ -232,7 +247,7 @@
                 </a>
 
             </div>
-            <h2 class="text-gray-500 ml-5">"Constructing knowledge with artistic skills."</h2>
+            <h2 class="phrase text-gray-500 ml-5">"Constructing knowledge with artistic skills."</h2>
         </div>
 
     </footer>
@@ -256,20 +271,20 @@
                     const foto = btn.getAttribute('data-foto');
                     const desc = btn.getAttribute('data-desc');
                     const desc2 = btn.getAttribute('data-desc2');
-                    
+
                     mTitle.innerText = nombre;
                     mImg.src = foto;
                     mText.innerText = desc;
                     mText2.innerText = desc2;
 
                     // 2. Lógica para la segunda descripción
-            if (desc2 && mText2) {
-                mText2.innerText = desc2;
-                mText2.classList.remove('hidden'); // La mostramos si existe
-            } else if (mText2) {
-                mText2.innerText = "";
-                mText2.classList.add('hidden'); // La ocultamos si no hay
-            }
+                    if (desc2 && mText2) {
+                        mText2.innerText = desc2;
+                        mText2.classList.remove('hidden'); // La mostramos si existe
+                    } else if (mText2) {
+                        mText2.innerText = "";
+                        mText2.classList.add('hidden'); // La ocultamos si no hay
+                    }
 
                     modal.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
