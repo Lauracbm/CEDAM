@@ -31,7 +31,7 @@ a {
 }
 
 
-/*.sub-menu {
+.sub-menu {
     list-style: none;
     display: none;
     position: absolute;
@@ -59,7 +59,7 @@ a {
 .hero img.movil {
     display: none !important;
 
-}*/
+}
 
 @media only screen and (max-width: 768px) {
     .nav :where(#menu-close-button, #menu-open-button) {
@@ -77,7 +77,7 @@ a {
         width: auto;
     }
 
-  /*  .nav .nav-menu {
+    .nav .nav-menu {
         display: flex;
         position: absolute;
         left: 0%;
@@ -97,7 +97,7 @@ a {
     .nav .nav-menu .nav-item {
         background: none;
         width: 100%;
-    }*/
+    }
 
     .nav .nav-menu .nav-link {
         color: black;
@@ -160,57 +160,94 @@ a {
     /*hero*/
     .hero {
         height: auto;
-        max-height: fit-content;
+        min-height: 300vh;
         width: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0;
-        margin-top: 0;
+        margin-top: -20%;
     }
 
-    .hero img.cLogo {
-        display: none;
+    .title{
+        position: absolute;
+        margin-top: -250%;
+        flex-direction: row;
+        align-items: center;
+        height: 20vh;
     }
 
-    .hero h1 {
-        font-size: 40px;
-        padding-bottom: 30px;
-        width: 80%;
+    .title p{
+        font-size: 15px;
         text-align: center;
+        width: 100%;
     }
 
-    .hero p {
-        width: 70%;
-        padding-top: 10%;
-        text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    }
 
     .uniform {
+        position: relative;
         height: auto;
-        width: auto;
+        width: 60%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        margin-left: 10vw;
+        gap: 10vh;
+        margin-top: 0%;
         
     }
 
-    .uniform {
+    .optionu {
         height: auto;
         width: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0;
-        gap: 0;
+        gap: 20vh;
+        
     }
    
+    .optionu img.Uniforms{
+        width: 80vw;
+        height: auto;
+        margin: 0;
+    }
 
-    
+    .optionu img.diario{
+        width: 40vw;
+        height: auto;
+        margin: 0;
+    }
 
+    .optionu h1{
+        position: absolute;
+        z-index: 30;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin-left: -10vw;
+    }
+
+    .optionu .h1b{
+        position: absolute;
+        z-index: 30;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin-top: 20vh;
+    }
+
+    .optionu img.cloud{
+        position: absolute;
+        width: 100vw;
+        margin-top: -3px;
+    }
+
+     .optionu img.cloudb{
+        position: absolute;
+        width: 100vw;
+        margin-bottom: -20vh;
+        margin-left: -20px;
+    }
      /*footer*/
 
     footer svg.cloud-bottom {
@@ -252,6 +289,27 @@ a {
 
     .phrase {
         display: none;
+    }
+
+    /* Modal responsive styles */
+    #modal-container > div {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+
+    #modal-img {
+        width: 80px;
+        height: 100px;
+    }
+
+    #modal-text, #modal-text-2 {
+        font-size: 14px;
+    }
+
+    .modal-info {
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
     }
 
 }
