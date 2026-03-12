@@ -298,9 +298,10 @@ a {
     }
 
     #modal-img {
-        width: 80px;
+        width: auto;
         height: 100px;
-    }
+    }   
+
 
     #modal-text, #modal-text-2 {
         font-size: 14px;

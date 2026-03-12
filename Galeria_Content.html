@@ -82,9 +82,17 @@
         </nav>
     </header>
 
+    
+
     <main
-        class="h-[100vh] bg-gradient-to-t from-blue-950 via-blue-700 to-blue-500 mt-15 z-50 flex flex-col items-center justify-centerx">
-        <section id="galeria" class="w-full max-w-screen-2xl p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        class="h-full pt-50 bg-gradient-to-t from-blue-950 via-blue-700 to-blue-500 mt-15 z-50 flex flex-col items-center justify-center">
+        <div>
+            <h1 class="text-yellow-300 font-extrabold text-[45px] -m-10 mb-10 ">Galería</h1>
+        </div>
+        <section id="galeria" class="w-full max-w-screen-2xl p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2  mb-20">
+            <!-- Aquí se agregarán las imágenes de la galería -->
+
+            
 
         </section>
     </main>
@@ -134,10 +142,10 @@
                 console.log(galleryParam);
                 let galleryItems = [];
 
-                for (let i = 0; i < 20; i++) {
+                for (let i = 0; i < 24; i++) {
                     galleryItems.push({
-                        href: `https://picsum.photos/200/200?random=${i}`,
-                        hrefImg: `https://picsum.photos/800/600?random=${i}`,
+                        href: `https://picsum.photos/1920/1080?random=${i}`,
+                        hrefImg: `https://picsum.photos/1920/1080?random=${i}`,
                         type: 'image'
                     });
                 }
