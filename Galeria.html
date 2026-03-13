@@ -14,35 +14,32 @@
 <body>
 
 
-    <header class="w-full top-0 z-50 nav fixed">
-        <nav class=" mx-auto">
+   <header class="w-full top-0 z-50 nav fixed">
+        <nav class="nav mx-auto">
             <div id="top" class="bg-[#F6F6F6] flex justify-center items-center p-4 gap-10 h-15 z-30 relative">
 
-                <a class=" bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+
+                <a class=" social bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
-                    <svg width="28" height="28">
+                    <svg width="28" height="28" class="social">
                         <use xlink:href="./Assets/spritee.svg#instagram" />
                     </svg>
                 </a>
 
-                <div class="flex flex-row items-center gap-4">
+                <div class="logo flex flex-row items-center gap-4">
                     <img src="IMG/logo_sin_fondo.webp" alt="logo" class="h-16">
                     <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
                 </div>
 
-                <a class="bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
+                <a class=" social bg-gradient-to-tr from-blue-950 via-blue-500 to-gray-200 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform "
                     href="https://www.facebook.com/Colegiobilinguecedam" target="_blank">
-                    <svg width="50" height="50">
+                    <svg width="50" height="50" class="social">
                         <use xlink:href="./assets/spritee.svg#facebook" />
                     </svg>
                 </a>
 
-                <a href="Index.html" class="rounded-full bg-gradient-to-tr from-pink-400 to-pink-700 absolute right-5 p-2 size-10 flex items-center justify-center hover:scale-110 transition-transform">
-                    <span class="material-icons-round text-white ">
-                        home
-                    </span>
-                </a>
+                <button id="menu-open-button" class="fas fa-bars text-black"></button>
             </div>
             <!--Cloud-->
             <svg viewBox="0 0 1440 90" class="cloud z-20 drop-shadow-[0_12px_6px_rgba(0,0,0,0.5)]">
@@ -50,29 +47,37 @@
             </svg>
             <!--nav-->
             <ul
-                class=" m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
+                class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
+                <!--<button id="menu-close-button" class="fas fa-times text-black"></button>-->
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Galeria.html"> Galería</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Galeria.html" class="nav-link"> Galería</a>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Campamentos.html">Campamentos</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Campamentos.html" class="nav-link">Campamentos</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15">
-                    <a href=""> Gestión académica</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px] mx-15 drop-down">
+                    <a href="/" class="nav-link">Gestión académica</a>
+                    <ul
+                        class="sub-menu bg-pink-700/80 rounded-[20px] flex flex-col -gap-10 items-center justify-center text-center">
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Certificados</button></li>
+                        <li class="hover:bg-pink-800 rounded-[90px]"><button>Informes Valorativos</button></li>
+                        <li class=""><button class="matriculas">Matriculas</button></li>
+                    </ul>
                 </li>
                 <li
-                    class="bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="/Uniformes.html">Uniformes</a>
+                    class="nav-item bg-green-600 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Uniformes.html" class="nav-link">Uniformes</a>
                 </li>
                 <li
-                    class="bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
-                    <a href="Servicios.html">Servicios</a>
+                    class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
+                    <a href="Servicios.html" class="nav-link">Servicios</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
@@ -89,8 +94,8 @@
 
                 <div class="options flex flex-col items-center justify-center gap-2 mb-20">
                     <a href="Galeria_Content.html?folder=instalaciones" class="">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/folderp.webp" alt="" class="ml-20">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/folderp.webp" alt="" class="folder ml-20">
 
                         <p class="ml-30">Instalaciones</p>
                     </a>
@@ -100,8 +105,8 @@
 
                 <div class="options flex flex-col items-center justify-center gap-2 mt-10">
                     <a href="Galeria_Content.html?folder=campamentos">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/foldero.webp" alt="" class="ml-20">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/foldero.webp" alt="" class="folder ml-20">
 
                         <p class="ml-27">Campamentos</p>
                     </a>
@@ -109,8 +114,8 @@
 
                 <div class="options flex flex-col items-center justify-center gap-2 mb-20">
                     <a href="Galeria_Content.html?folder=eventos">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/folderg.webp" alt="" class="ml-20">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/folderg.webp" alt="" class="folder ml-20">
                         <p class="ml-34">Eventos</p>
                     </a>
                 </div>
@@ -121,8 +126,8 @@
 
                 <div class="options flex flex-col items-center justify-center gap-2 mb-20">
                     <a href="Uniformes.html">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/folderr.webp" alt="" class="ml-20">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/folderr.webp" alt="" class="folder ml-20">
 
                         <p class="ml-30">Uniformes</p>
                     </a>
@@ -130,17 +135,17 @@
 
                  <div class="options flex flex-col items-center justify-center gap-2 mt-20">
                     <a href="Galeria_Content.html?folder=salidas">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/folderpk.webp" alt="" class="ml-20">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/folderpk.webp" alt="" class="folder ml-20">
 
                         <p class="ml-23">Salidas Pedagógicas</p>
                     </a>
                 </div>
 
-                <div class="option flex flex-col items-center justify-center gap-2 mb-20">
+                <div class="options flex flex-col items-center justify-center gap-2 mb-20">
                     <a href="#">
-                        <img src="/IMG/minicloud.webp" alt="" class="-mb-60">
-                        <img src="/IMG/folderw.webp" alt="" class="ml-20 blur-xs grayscale">
+                        <img src="/IMG/minicloud.webp" alt="" class="cloud -mb-60">
+                        <img src="/IMG/folderw.webp" alt="" class="folder ml-20 blur-xs grayscale">
 
                         <p class="ml-27">Proximamente...</p>
                     </a>
@@ -152,15 +157,13 @@
     </main>
 
 
-
-    <footer class="-mt-30 z-50">
-        <svg viewBox="0 0 1150 170">
+<footer class="-mt-36 w-full bg-blue-500 z-50">
+        <svg viewBox="0 0 1440 220" class="cloud-bottom z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
             <use xlink:href="Assets\sprite.svg#cloud-bottom"></use>
-
         </svg>
-        <div class="h-20 max-w-screen-2xl flex flex-col justify-center items-center -mt-32 z-50 gap-4">
-            <p class=" text-gray-500 flex flex-row items-center gap-4"> <a href="https://colegiobilinguecedam.com"><img
-                        class="h-10" src="./IMG/logo_sin_fondo.webp" alt=""></a> 2025 Colegio Bilingüe Cedam.</p>
+        <div class="logof h-20 flex flex-col justify-center items-center -mt-30 relative gap-4">
+            <p class=" text-gray-500 flex flex-row items-center gap-4"><img class="h-10" src="./IMG/logo_sin_fondo.webp"
+                    alt="">Colegio Bilingüe CEDAM</p>
 
             <div id="social" class="flex flex-row gap-5">
 
@@ -179,16 +182,17 @@
                     </svg>
                 </a>
 
-                <a class=" bg-gradient-to-tr from-green-400 to-green-700 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                <a class=" bg-gradient-to-tr from-green-400 to-green-950 p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
                     href="https://www.instagram.com/colegiobilinguecedam/?igshid=1jg4e4rkaq2mo" target="_blank"
                     aria-label="Instagram" title="Ir a IG">
                     <svg width="28" height="28">
                         <use xlink:href="./assets/spritee.svg#w" />
                     </svg>
                 </a>
-            </div>
-        </div>
 
+            </div>
+            <h2 class="phrase text-gray-500 ml-5">"Constructing knowledge with artistic skills."</h2>
+        </div>
 
     </footer>
 
