@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/Campamentos.css">
 
     <link rel="stylesheet" href="CSS/swiper.css">
@@ -51,7 +52,8 @@
             <ul
                 class="nav-menu m-10 flex justify-around gap-30 items-center font-bold text-white p-4 h-20 relative z-50 -mt-25 mb-8 ">
 
-                <!--<button id="menu-close-button" class="fas fa-times text-black"></button>-->
+                <button id="menu-close-button" class="fas fa-times text-black"></button>
+
                 <li
                     class="nav-item bg-pink-500 h-10 px-6 border-none rounded-[50px] flex items-center justify-center min-w-[120px]">
                     <a href="Galeria.html" class="nav-link"> Galería</a>
@@ -80,8 +82,11 @@
                 </li>
             </ul>
 
+            
+
         </nav>
     </header>
+
     <main
         class="hero bg-gradient-to-b from-blue-500 to-blue-950 relative min-h-[100vh] flex justify-center items-center overflow-hidden mt-15">
 
@@ -238,6 +243,20 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    </script>
+
+    <script>
+        const menuOpen = document.getElementById('menu-open-button');
+        const menuClose = document.getElementById('menu-close-button');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuOpen.addEventListener('click', () => {
+            navMenu.classList.add('open');
+        });
+
+        menuClose.addEventListener('click', () => {
+            navMenu.classList.remove('open');
         });
     </script>
 </body>

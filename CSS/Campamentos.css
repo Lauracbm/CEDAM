@@ -60,53 +60,63 @@ a {
     display: none !important;
 }
 
+.nav :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
-    .nav :where(#menu-close-button, #menu-open-button) {
-        font-size: large;
-
+      .nav :where(#menu-close-button, #menu-open-button) {
+        font-size: medium;
     }
 
     .nav #menu-close-button {
         position: absolute;
-        right: 30px;
-        bottom: 250px;
+        right: 38px;
+        bottom: 470px;
+        color: #a21c5f;
+        display: block;
     }
 
-    .nav{
-        width: auto;
+    .nav #menu-open-button{
+        color: #ec4899;
+        display: block;
     }
 
     .nav .nav-menu {
-        display: flex;
-        position: absolute;
-        left: 0%;
-        top: 30%;
-        width: auto;
-        height: auto;
+        display: none;
+    }
+
+    .nav .nav-menu.open {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30%;
-        gap: 10px;
+        padding-top: 100px;
+        gap: 5px;
         background-color: #f6f6f6;
-        border-radius: 15%;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
-    .nav .nav-menu .nav-item {
+    .nav .nav-menu.open .nav-item {
         background: none;
         width: 100%;
     }
 
-    .nav .nav-menu .nav-link {
+    .nav .nav-menu.open .nav-link {
         color: black;
         display: block;
-        margin-top: 10px;
+        margin-top: 17px;
         font-weight: 500;
         font-size: 15px;
         text-align: center;
     }
+
 
     html,
     body {
