@@ -118,6 +118,9 @@ a {
     }
 
 
+    .nav .nav-link {
+        text-transform: uppercase;
+    }
 
     html,
     body {

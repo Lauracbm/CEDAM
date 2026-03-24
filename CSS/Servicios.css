@@ -120,6 +120,10 @@ a {
         text-align: center;
     }
 
+    .nav .nav-link {
+        text-transform: uppercase;
+    }
+
     html,
     body {
         width: 100vw;

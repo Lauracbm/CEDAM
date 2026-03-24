@@ -73,12 +73,13 @@ a {
 }
 
 .hero img.movil {
-        display: none !important;
-    }
+    display: none !important;
+}
 
-    .nav :where(#menu-close-button, #menu-open-button){
-        display: none;
-    }
+.nav #menu-open-button,
+.nav #menu-close-button {
+    display: none;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -95,7 +96,7 @@ a {
         display: block;
     }
 
-    .nav #menu-open-button{
+    .nav #menu-open-button {
         color: #ec4899;
         display: block;
     }
@@ -132,6 +133,10 @@ a {
         font-weight: 500;
         font-size: 15px;
         text-align: center;
+    }
+
+    .nav .nav-link {
+        text-transform: uppercase;
     }
 
     html,

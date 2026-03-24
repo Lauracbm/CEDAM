@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1,
+h2,
+textPath {
+    font-family: Margarine;
+}
+
+#formulario input,
+textarea {
+    font-family: Margarine;
+}
+
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 800;
+    color: #ec4899;
+}
+
+#contact1 h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 800;
+    color: #fde047;
+}
+
+p {
+    font-family: "Playpen Sans", cursive;
+    font-weight: 500;
+}
+
+.options:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.crayolay,
+.crayolag {
+    display: none;
+}
+
+.sub-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 40%;
+    display: none;
+    min-width: 100px;
+}
+
+.matriculas:disabled {
+    background-color: #ccc;
+    color: #666;
+    background-color: #ccc;
+    cursor: none;
+    opacity: 0.6;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.drop-down:hover .sub-menu {
+    display: block;
+}
+
+.hero img.movil {
+    display: none !important;
+}
+
+.nav #menu-open-button,
+.nav #menu-close-button {
+    display: none;
+}
