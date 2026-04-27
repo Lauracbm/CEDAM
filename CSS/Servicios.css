@@ -35,21 +35,60 @@ a {
     list-style: none;
     display: none;
     position: absolute;
-    top: 40%;
-    display: none;
-    min-width: 100px;
+    top: calc(100% + 0.55rem);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+    padding: 0.4rem 0;
+    z-index: 20;
 }
 
 .matriculas:disabled {
     background-color: #ccc;
     color: #666;
-    background-color: #ccc;
-    cursor: none;
+    cursor: not-allowed;
     opacity: 0.6;
 }
 
 .sub-menu li {
-    padding: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.sub-menu li button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #111827;
+    font-family: inherit;
+    font-size: 0.95rem;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.sub-menu li:hover {
+    background: rgba(236, 72, 153, 0.1);
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down > .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.drop-down > .nav-link::after {
+    content: "▾";
+    font-size: 0.8rem;
+    opacity: 0.85;
 }
 
 .drop-down:hover .sub-menu {
