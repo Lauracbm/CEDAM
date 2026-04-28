@@ -124,8 +124,8 @@ a {
 @media only screen and (max-width: 768px) {
 
     .nav :where(#menu-close-button, #menu-open-button) {
-        font-size: 20px;
-        justify-content: flex-end;
+        font-size: 25px;
+        
 
     }
 
@@ -634,5 +634,10 @@ a {
 
     .phrase {
         display: none;
+    }
+
+    #icfes img{
+        width: 100%;
+        height: auto;
     }
 }
