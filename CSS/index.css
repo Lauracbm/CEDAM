@@ -469,7 +469,7 @@ a {
     /*extras*/
 
     #extras {
-        height: 250vh;
+        height: auto;
     }
 
     #extras h2 {
