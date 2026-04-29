@@ -155,7 +155,6 @@ a {
         margin: 0;
     }
 
-    /* Alternamos colores para mantener la estética del sitio */
     .nav .nav-menu.open .nav-item:nth-child(even) {
         background: #16a34a; 
     }
@@ -230,12 +229,12 @@ a {
 
     /*hero*/
     .hero {
-        height: auto;
+        height: auto !important;
         width: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 1rem;
         margin-top: 0;
     }
 
@@ -275,13 +274,14 @@ a {
 
     .hero img.movil {
         display: block !important;
+        width: 100%;
+        margin-top: 10%;
     }
 
     /*content*/
     .contenido {
         flex-direction: column;
-        padding: 20%;
-        padding-top: 0%;
+        padding: 20%;;
     }
 
     .contenido .requirements {
