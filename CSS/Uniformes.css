@@ -243,8 +243,8 @@ a {
     }
 
     .title{
-        position: absolute;
-        margin-top: -200%;
+        position: block;
+        margin-top: -230%;
         flex-direction: row;
         align-items: center;
         height: 15vh;

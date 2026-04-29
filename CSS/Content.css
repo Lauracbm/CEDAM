@@ -122,6 +122,16 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+
+    main{
+        height: full;
+        margin-top: -10px;
+    }
+
+    main h1{
+        font-size: 35px;
+        margin-top: -100px;
+    }
     .nav :where(#menu-close-button, #menu-open-button) {
         font-size: 28px;
         cursor: pointer;
