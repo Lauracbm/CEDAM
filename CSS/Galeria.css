@@ -237,8 +237,7 @@ a {
     }
 
     .content h1 {
-        font-size: 30px;
-        margin-top: 50px;
+        display: none !important;
     }
 
     #folders {
