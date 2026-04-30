@@ -305,11 +305,12 @@ a {
 
     .hero img.movil {
         display: block !important;
+        margin-top: 10%;
     }
 
     /*about us*/
     #About {
-        margin-top: -50px;
+        margin-top: -20px;
         z-index: 4;
         width: 100vw;
         min-width: 0;
