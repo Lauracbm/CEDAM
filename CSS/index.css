@@ -113,7 +113,6 @@ a {
 
 .hero img.movil {
     display: none !important;
-    margin-top: 10%;
 }
 
 .nav #menu-open-button,
@@ -299,12 +298,12 @@ a {
 
     .hero img.movil {
         display: block !important;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     /*about us*/
     #About {
-        margin-top: -10%;
+        margin-top: -15%;
         z-index: 4;
         width: 100vw;
         min-width: 0;
