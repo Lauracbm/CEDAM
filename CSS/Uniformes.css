@@ -251,10 +251,7 @@ a {
     }
 
     .title p{
-        margin-top: 5vh;
-        font-size: 15px;
-        text-align: center;
-        width: 100%;
+        display: none !important;
     }
 
 
