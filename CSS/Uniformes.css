@@ -244,13 +244,14 @@ a {
 
     .title{
         position: block;
-        margin-top: -280%;
+
         flex-direction: row;
         align-items: center;
         height: 15vh;
     }
 
     .title p{
+        margin-top: 5vh;
         font-size: 15px;
         text-align: center;
         width: 100%;
