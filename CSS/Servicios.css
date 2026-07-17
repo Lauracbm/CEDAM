@@ -219,8 +219,14 @@ a {
         width: auto;
     }
 
-    #top a {
+    #top > a {
         display: none !important;
+    }
+
+    .logo a {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
     }
 
     svg.cloud {
