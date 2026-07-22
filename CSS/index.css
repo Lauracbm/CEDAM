@@ -16,6 +16,10 @@ textPath {
     font-family: Margarine;
 }
 
+.ga {
+    font-family: "Sour Gummy", sans-serif !important;
+}
+
 #formulario input,
 textarea {
     font-family: Margarine;
@@ -46,7 +50,12 @@ p {
 
 a {
     text-decoration: none;
-    font-family: "Sour Gummy", sans-serif;
+    font-family: "Sour Gummy", sans-serif ;
+
+    p {
+        font-family: "Sour Gummy", sans-serif !important;
+        font-weight: 800;
+    }
 }
 
 .crayolay,
@@ -127,6 +136,9 @@ a {
     display: none;
 }
 
+
+
+/* Media Queries for Mobile Devices */
 
 @media only screen and (max-width: 768px) {
     .nav :where(#menu-close-button, #menu-open-button) {
@@ -674,4 +686,11 @@ a {
         width: 100%;
         height: auto;
     }
+}
+
+#mision{
+    background-image: url('./IMG/crayonm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
