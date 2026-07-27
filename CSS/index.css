@@ -402,14 +402,14 @@ a {
         height: auto;
     }
 
-    #mision svg {
+    #mision .crayolayc {
         display: none !important;
     }
 
     .crayolay {
         rotate: 90deg;
         display: flex !important;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         width: 100px;
         height: auto;
@@ -436,9 +436,10 @@ a {
     #mision h2 {
         font-size: 25px;
         font-weight: 700;
-        margin-left: 40px;
-        margin-top: -330px;
         z-index: 2;
+        margin-top: -260px;
+        margin-bottom: 200px;
+        margin-left: 50px;
         position: static;
         color: #28292f;
     }
@@ -448,6 +449,7 @@ a {
     #vision {
         flex-direction: column;
         align-items: flex-start;
+        margin-top: -160px;
         width: 100vw;
         height: auto;
     }
@@ -475,7 +477,7 @@ a {
         z-index: 2;
     }
 
-    #vision svg {
+    #vision .crayolagc {
         display: none !important;
     }
 

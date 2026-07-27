@@ -29,7 +29,7 @@
                 <div class="logo flex flex-row items-center gap-4">
                     <a href="index.html" class="flex flex-row items-center gap-4">
                         <img src="./IMG/logo_sin_fondo.webp" alt="logo" class="h-16">
-                        <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe Cedam</h1>
+                        <h1 class="text-3xl font-bold text-[#06039C] ">Colegio Bilingüe CEDAM</h1>
                     </a>
                 </div>
 
@@ -65,7 +65,7 @@
                     <a href="#" class="nav-link">GESTIÓN ACADÉMICA</a>
                     <ul
                         class="sub-menu bg-pink-700 rounded-[10px] flex flex-col -gap-10 items-center justify-center text-center -mt-5 p-4 absolute">
-                        <li class="hover:bg-pink-800 "><button>CERTIFICADOS</button></li>
+                        <li class="hover:bg-pink-800 "><button>CERTIFICADO ESCOLAR</button></li>
                         <li class="hover:bg-pink-800]"><button>INFORMES VALORATIVOS</button></li>
                         <!--<li class=""><button class="matriculas">MATRICULAS</button></li>-->
                     </ul>
@@ -107,13 +107,28 @@
 
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 mb-10  transition"
-                        data-nombre="PREESCOLAR" data-foto="./IMG/preescolar.jpg" data-desc="★ Sudadera azul oscuro con logos respectivos del colegio.
-                        ★ Camisa blanca, rosa o azul tipo polocon con el logo del colegio.
-                        ★ Medias blancas (No tobilleras)
-                        ★ Tennis que conbinen con la sudadera
+                        data-nombre="PREESCOLAR" 
+                        data-foto="./IMG/preescolar delantal.png" 
+                        data-desc="
                         ★ Delantal del colegio
-                        ★ Opcional: Chaqueta azul oscura para invierno con los logos del colegio.
-                        Se utiliza el delantal todos los días, los niños llegan con el delantal puesto desde casa.">
+                        ★Se utiliza el delantal todos los días
+                        ★los niños llegan con el delantal puesto desde casa."
+
+                        data-foto2="./IMG/sudadera.png"
+                        
+                        data-desc2="
+                        ★ Sudadera azul oscuro con logos respectivos del colegio.
+                        ★ Camisa blanca, rosa o azul tipo polo con con el logo del colegio.
+                        ★ Medias blancas (No tobilleras)
+                        ★ Tennis que combinen con la sudadera"
+                        
+                        data-foto3="./IMG/preescolar buzo.png"
+                        
+                        data-desc3="
+                        ★Para niñas pantalon tipo cargo azul oscuro o jardinera azul oscuro con el logo del colegio.
+                        ★Pantalon tipo cargo azul oscuro
+                        ★Camisa tipo polo con el logo del colegio.
+                        ★Buzo CBC">
 
                         <img src="./IMG/minicloudsewing.webp" alt="" class="cloudb w-[18vw] -ml-8">
                         <h1 class="h1b text-pink-500 font-bold text-[20px] rounded-full p-1 w-25  absolute  ml-10 z-30">
@@ -127,7 +142,7 @@
                     <img src="./IMG/sudadera.webp" class="Uniforms absolute -mt-30 z-0 h-[60vh]" alt="">
                     <a href="javascript:void(0)"
                         class="cloud-btn flex flex-row items-center gap-2 p-4 rounded-lg hover:scale-115 z-10 -mb-30  transition"
-                        data-nombre="SUDADERA" data-foto="./IMG/Sudadera.jpg" data-desc="
+                        data-nombre="SUDADERA" data-foto="./IMG/sudadera.png" data-desc="
                         ★ Sudadera azul oscuro con logos respectivos del colegio.
                         ★ Camisa blanca, rosa o azul tipo polo con con el logo del colegio.
                         ★ Medias blancas (No tobilleras)
@@ -203,12 +218,18 @@
 
                     <h3 id="modal-title" class="text-2xl font-black mb-4 text-gray-900"></h3>
 
-                    <div class="modal-info flex flex-row gap-4 items-start">
-                        <img id="modal-img" src="" alt=""
-                            class="w-100 h-130 mb-4 drop-shadow-lg rounded-lg object-cover">
-                        <div class="flex flex-col gap-4">
-                            <p id="modal-text" class="text-gray-600 text-lg text-justify font-medium"></p>
-                            <p id="modal-text-2" class="text-gray-600 text-lg text-justify font-medium hidden"></p>
+                    <div class="modal-info grid grid-cols-1 md:grid-cols-3 gap-6 items-start w-full">
+                        <div id="modal-item-1" class="modal-item flex flex-col gap-3 items-center">
+                            <img id="modal-img-1" src="" alt="" class="modal-image w-full h-64 drop-shadow-lg rounded-lg object-contain">
+                            <p id="modal-text-1" class="text-gray-600 text-md text-justify"></p>
+                        </div>
+                        <div id="modal-item-2" class="modal-item flex flex-col gap-3 items-center hidden">
+                            <img id="modal-img-2" src="" alt="" class="modal-image w-full h-64 drop-shadow-lg rounded-lg object-contain">
+                            <p id="modal-text-2" class="text-gray-600 text-lg text-justify font-medium"></p>
+                        </div>
+                        <div id="modal-item-3" class="modal-item flex flex-col gap-3 items-center hidden">
+                            <img id="modal-img-3" src="" alt="" class="modal-image w-full h-64 drop-shadow-lg rounded-lg object-contain">
+                            <p id="modal-text-3" class="text-gray-600 text-lg text-justify font-medium"></p>
                         </div>
                     </div>
 
@@ -256,34 +277,32 @@
 
             const triggers = document.querySelectorAll('.cloud-btn');
             const modal = document.getElementById('modal-container');
-            const mImg = document.getElementById('modal-img');
             const mTitle = document.getElementById('modal-title');
-            const mText = document.getElementById('modal-text');
             const closeBtn = document.getElementById('modal-close');
-            const mText2 = document.getElementById('modal-text-2');
+            const modalItems = [1, 2, 3].map((number) => ({
+                item: document.getElementById(`modal-item-${number}`),
+                image: document.getElementById(`modal-img-${number}`),
+                text: document.getElementById(`modal-text-${number}`)
+            }));
 
             triggers.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
 
                     const nombre = btn.getAttribute('data-nombre');
-                    const foto = btn.getAttribute('data-foto');
-                    const desc = btn.getAttribute('data-desc');
-                    const desc2 = btn.getAttribute('data-desc2');
-
                     mTitle.innerText = nombre;
-                    mImg.src = foto;
-                    mText.innerText = desc;
-                    mText2.innerText = desc2;
 
-                    // 2. Lógica para la segunda descripción
-                    if (desc2 && mText2) {
-                        mText2.innerText = desc2;
-                        mText2.classList.remove('hidden'); // La mostramos si existe
-                    } else if (mText2) {
-                        mText2.innerText = "";
-                        mText2.classList.add('hidden'); // La ocultamos si no hay
-                    }
+                    modalItems.forEach((modalItem, index) => {
+                        const suffix = index === 0 ? '' : index + 1;
+                        const imagePath = btn.getAttribute(`data-foto${suffix}`);
+                        const description = btn.getAttribute(`data-desc${suffix}`);
+                        const hasContent = imagePath && description;
+
+                        modalItem.image.src = imagePath || '';
+                        modalItem.image.alt = `${nombre} - opción ${index + 1}`;
+                        modalItem.text.innerText = description || '';
+                        modalItem.item.classList.toggle('hidden', !hasContent);
+                    });
 
                     modal.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
