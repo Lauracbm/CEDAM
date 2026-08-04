@@ -25,9 +25,18 @@ p {
 
 }
 
+.ga {
+    font-family: "Sour Gummy", sans-serif !important;
+}
+
 a {
     text-decoration: none;
-    font-family: "Sour Gummy", sans-serif;
+    font-family: "Sour Gummy", sans-serif ;
+
+    p {
+        font-family: "Sour Gummy", sans-serif !important;
+        font-weight: 800;
+    }
 }
 
 
