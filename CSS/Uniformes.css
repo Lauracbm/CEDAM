@@ -239,7 +239,7 @@ a {
     /*hero*/
     .hero {
         height: auto;
-        min-height: 300vh;
+        min-height: 230vh;
         width: auto;
         flex-direction: column;
         align-items: center;
@@ -249,11 +249,10 @@ a {
     }
 
     .title{
-        position: block;
-        margin-top: -280%;
+        top: -65vh;        
         flex-direction: row;
         align-items: center;
-        height: 15vh;
+        
     }
 
     .title p{
